@@ -1,4 +1,5 @@
 {
+  // START: cantrips
   {
     name: "Blade Ward",
     id: "blade-ward-0",
@@ -80,7 +81,7 @@
     id: "mage-hand-0",
     level: 0,
     school: "conjuration",
-    concentration = false,
+    concentration: false,
     casting_time: "1 action",
     range: [30, "ft"],
     components: ["V","S"],
@@ -100,4 +101,43 @@
              The hand can't attack, activate magic items, or \
            carry more than 10 pounds."
   },
+  {
+    name: "Mending",
+    id: "mending-0",
+    level: 0,
+    school: "transmutation",
+    concentration: false,
+    casting_time: "1 minute",
+    range: "touch",
+    components: ["V","S","M"],
+    material_desc: "two lodestones",
+    duration: [0, "seconds"],
+    desc: "This spell repairs a single break or tear in an object \
+           you touch, such as a broken chain link, two halves \
+           of a broken key, a torn cloak, or a leaking wineskin. \
+           As long as the break or tear is no larger than 1 foot \
+           in any dimension, you mend it, leaving no trace of \
+           the former damage. \
+             This spell can physically repair a magic item, but \
+           it can't restore magic to such an object."
+  },
+  // END: cantrips
+  // START: level 1
+  // END: level 1
+  // START: level 2
+  // END: level 2
+  // START: level 3
+  // END: level 3
+  // START: level 4
+  // END: level 4
+  // START: level 5
+  // END: level 5
+  // START: level 6
+  // END: level 6
+  // START: level 7
+  // END: level 7
+  // START: level 8
+  // END: level 8
+  // START: level 9
+  // END: level 9
 }
