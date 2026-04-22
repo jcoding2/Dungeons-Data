@@ -1,0 +1,103 @@
+{
+  {
+    name: "Blade Ward",
+    id: "blade-ward-0",
+    level: 0,
+    school: "abjuration",
+    concentration: true,
+    casting_time: "1 action",
+    range: "self",
+    components: ["V","S"],
+    material_desc: null,
+    duration: [1, "minute"],
+    desc: "Whenever a creature makes an attack roll against \
+          you before the spell ends, the attacker subtracts 1d4 \
+          from the attack roll."
+  },
+  {
+    name: "Dancing Lights",
+    id: "dancing-lights-0",
+    level: 0,
+    school: "illusion",
+    concentration: true,
+    casting_time: "1 action",
+    range: [120, "ft"],
+    components: ["V","S","M"],
+    material_desc: "a bit of phosphorus",
+    duration: [1, "minute"],
+    desc: "You create up to four torch-size lights within range, \
+           making them appear as torches, lanterns or glow- \
+           ing orbs that hover for the duration. Alternatively, \
+           you combine the four lights into one flowing Me- \
+           dium form that is vaguely humanlike. Whichever \
+           form you choose, each light sheds Dim Light in a \
+           10-foot radius. \
+             As a Bonus Action, you can move the lights up \
+           to 60 feet to a space within range. A light must be \
+           within 20 feet of another light created by this spell, \
+           and a light vanishes if it exceeds the spell's range."
+  },
+  {
+    name: "Friends",
+    id: "friends-0",
+    level: 0,
+    school: "enchantment",
+    concentration: true,
+    casting_time: "1 action",
+    range: [10, "ft"],
+    components: ["S","M"],
+    material_desc: "some makeup",
+    duration: [1, "minute"],
+    desc: "You magically emanate a sense of friendship toward \
+           one creature you can see within range. The target \
+           must succeed on a WIS saving throw or have \
+           the Charmed condition for the duration. The tar- \
+           get succeeds automatically if it isn't a Humanoid, if \
+           you're fighting it, or you have cast this spell on it \
+           within the past 24 hours."
+  },
+  {
+    name: "Light",
+    id: "light-0",
+    level: 0,
+    school: "evocation",
+    concentration: false,
+    casting_time: "1 action",
+    range: "touch",
+    components: ["V","M"],
+    material_desc: "a firefly or phosphorescent moss",
+    duration: [1, "hour"],
+    desc: "You touch one Large or smaller object that isn't \
+           being worn or carried by someone else. Until the \
+           spell ends, the object sheds Bright Light in a 20-foot \
+           radius and Dim Light for another 20 feet. The \
+           light can be colored as you like. \
+             Covering the object with something opaque \
+           blocks the light. The spell ends if you cast it again."
+  },
+  {
+    name: "Mage Hand",
+    id: "mage-hand-0",
+    level: 0,
+    school: "conjuration",
+    concentration = false,
+    casting_time: "1 action",
+    range: [30, "ft"],
+    components: ["V","S"],
+    material_desc: null,
+    duration: [1, "minute"],
+    desc: "A spectral, floating hand appears at a point you \
+           choose within range. The hand lasts for the dura- \
+           tion. The hand vanishes if it is ever more than 30 \
+           feet away from you or if you cast this spell again. \
+             When you cast the spell, you can use the hand \
+           to manipulate an object, open an unlocked door or \
+           container, stow or retrieve an item from an open \
+           container, or pour the contents out of a vial. \
+             As a Magic action on your later turns, you can \
+           control the hand thus again. As part of that action, \
+           you can move the hand up to 30 feet. \
+             The hand can't attack, activate magic items, or \
+           carry more than 10 pounds."
+  },
+}
