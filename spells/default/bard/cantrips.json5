@@ -26,6 +26,7 @@
     type_4: null,
     type_5: null,
     type_6: null,
+    cantrip_upgrade: null,
   },
   {
     name: "Dancing Lights",
@@ -61,6 +62,7 @@
     type_4: null,
     type_5: null,
     type_6: null,
+    cantrip_upgrade: null,
   },
   {
     name: "Friends",
@@ -92,6 +94,7 @@
     type_4: null,
     type_5: null,
     type_6: null,
+    cantrip_upgrade: null,
   },
   {
     name: "Light",
@@ -123,6 +126,7 @@
     type_4: null,
     type_5: null,
     type_6: null,
+    cantrip_upgrade: null,
   },
   {
     name: "Mage Hand",
@@ -160,6 +164,7 @@
     type_4: null,
     type_5: null,
     type_6: null,
+    cantrip_upgrade: null,
   },
   {
     name: "Mending",
@@ -192,6 +197,7 @@
     type_4: null,
     type_5: null,
     type_6: null,
+    cantrip_upgrade: null,
   },
   {
     name: "Message",
@@ -224,6 +230,7 @@
     type_4: null,
     type_5: null,
     type_6: null,
+    cantrip_upgrade: null,
   },
   {
     name: "Minor Illusion",
@@ -269,6 +276,7 @@
     type_4: null,
     type_5: null,
     type_6: null,
+    cantrip_upgrade: null,
   },
   {
     name: "Prestidigitation",
@@ -305,7 +313,136 @@
     type_6: "  ***Minor Creation.*** You create a nonmagical trinket \
              or an illusory image that can fit in your hand. It \
              lasts until the end of your next turn. A trinket can \
-             deal no damage and has no monetary worth."
+             deal no damage and has no monetary worth.",
+    cantrip_upgrade: null,
   },
+  {
+    name: "Starry Wisp",
+    id: "starry-wisp-0",
+    level: 0,
+    school: "evocation",
+    concentration: false,
+    casting_time: "1 action",
+    range: [60, "ft"],
+    components: ["V","S"],
+    material_desc: null,
+    duration: [0, "seconds"],
+    type_1_duration: null,
+    type_2_duration: null,
+    type_3_duration: null,
+    type_4_duration: null,
+    type_5_duration: null,
+    type_6_duration: null,
+    desc: "You launch a mote of light at one creature or object \
+           within range. Make a ranged spell attack against \
+           the target. On a hit, the target takes 1d8 Radiant \
+           damage, and until the end of your next turn, it emits \
+           Dim Light in a 10 ft radius and can't benefit from \
+           the Invisable condition.",
+    type_1: null,
+    type_2: null,
+    type_3: null,
+    type_4: null,
+    type_5: null,
+    type_6: null,
+    cantrip_upgrade: "***Cantrip Upgrade.*** The damage increases by 1d8
+                      when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).",
+  },
+  {
+    name: "Thunderclap",
+    id: "thunderclap-0",
+    level: 0,
+    school: "evocation",
+    casting_time: "1 action",
+    range: "self",
+    components: ["S"],
+    material_desc: null,
+    duration: [0, "seconds"],
+    type_1_duration: null,
+    type_2_duration: null,
+    type_3_duration: null,
+    type_4_duration: null,
+    type_5_duration: null,
+    type_6_duration: null,
+    desc: "Each creature in a 5-foot Emanation originating \
+           from you must succeed on a CON saving throw or take \
+           1d6 Thunder damage. The spell's thunderous sound can \
+           be heard up to 100 ft away.",
+    type_1: null,
+    type_2: null,
+    type_3: null,
+    type_4: null,
+    type_5: null,
+    type_6: null,
+    cantrip_upgrade: "***Cantrip Upgrade.*** The damage increases by 1d6 \
+                      when you reach levels 5 (2d6), 11 (3d6) and 17 (4d6).",
+  },
+  // man am I so glad to be almost done with the bard cantrips...
+  {
+    name: "True Strike",
+    id: "true-strike-0",
+    level: 0,
+    school: "divination",
+    casting_time: "1 action",
+    range: "self",
+    components: ["S","M"],
+    material_desc: "a weapon with which you have proficiency and that is worth 1+ copper points",
+    duration: [0, "seconds"],
+    type_1_duration: null,
+    type_2_duration: null,
+    type_3_duration: null,
+    type_4_duration: null,
+    type_5_duration: null,
+    type_6_duration: null,
+    desc: "Guided by a flash of magical insight, you make one \
+           attack with the weapon used in the spell's casting. \
+           The attack uses your spellcasting ability for the at- \
+           tack and damage rolls instead of using STR or \
+           DEX. If the attack deals damage, it can be Ra- \
+           diant damage or the weapon's normal damage type \
+           (your choice).",
+    type_1: null,
+    type_2: null,
+    type_3: null,
+    type_4: null,
+    type_5: null,
+    type_6: null,
+    cantrip_upgrade: "***Cantrip Upgrade.*** Whether you deal Radiant dam- \
+                      age or the weapon's normal damage type, the attack \
+                      deals extra Radiant damage when you reach levels 5 \
+                      (1d6), 11 (2d6) and 17 (3d6).",
+  },
+  // here it is. the final one.
+  {
+    name: "Vicious Mockery",
+    id: "vicious-mockery-0",
+    level: 0,
+    school: "enchantment",
+    casting_time: "1 action",
+    range: [60, "ft"],
+    components: ["V"],
+    material_desc: null,
+    duration: [0, "seconds"],
+        type_1_duration: null,
+    type_2_duration: null,
+    type_3_duration: null,
+    type_4_duration: null,
+    type_5_duration: null,
+    type_6_duration: null,
+    desc: "You unleash a string of insults laced with subtle \
+           enchantments at one creature you can see or hear \
+           within range. The target must succeed on a WIS \
+           saving throw or take 1d6 Psychic damage and have \
+           Disadvantage on the next attack roll it makes before \
+           the end of its next turn.",
+    type_1: null,
+    type_2: null,
+    type_3: null,
+    type_4: null,
+    type_5: null,
+    type_6: null,
+    cantrip_upgrade: "***Cantrip Upgrade*** The damage increases by 1d6 \
+                      when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6)."
+  }
   // END: cantrips
 }
