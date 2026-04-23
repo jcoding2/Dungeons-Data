@@ -1,34 +1,6 @@
 {
   // START: cantrips
   {
-    name: "Blade Ward",
-    id: "blade-ward-0",
-    level: 0,
-    school: "abjuration",
-    concentration: true,
-    casting_time: "1 action",
-    range: "self",
-    components: ["V","S"],
-    material_desc: null,
-    duration: [1, "minute"],
-    type_1_duration: null,
-    type_2_duration: null,
-    type_3_duration: null,
-    type_4_duration: null,
-    type_5_duration: null,
-    type_6_duration: null,
-    desc: "Whenever a creature makes an attack roll against \
-          you before the spell ends, the attacker subtracts 1d4 \
-          from the attack roll.",
-    type_1: null,
-    type_2: null,
-    type_3: null,
-    type_4: null,
-    type_5: null,
-    type_6: null,
-    cantrip_upgrade: null,
-  },
-  {
     name: "Dancing Lights",
     id: "dancing-lights-0",
     level: 0,
@@ -56,38 +28,6 @@
            to 60 feet to a space within range. A light must be \
            within 20 feet of another light created by this spell, \
            and a light vanishes if it exceeds the spell's range.",
-    type_1: null,
-    type_2: null,
-    type_3: null,
-    type_4: null,
-    type_5: null,
-    type_6: null,
-    cantrip_upgrade: null,
-  },
-  {
-    name: "Friends",
-    id: "friends-0",
-    level: 0,
-    school: "enchantment",
-    concentration: true,
-    casting_time: "1 action",
-    range: [10, "ft"],
-    components: ["S","M"],
-    material_desc: "some makeup",
-    duration: [1, "minute"],
-    type_1_duration: null,
-    type_2_duration: null,
-    type_3_duration: null,
-    type_4_duration: null,
-    type_5_duration: null,
-    type_6_duration: null,
-    desc: "You magically emanate a sense of friendship toward \
-           one creature you can see within range. The target \
-           must succeed on a WIS saving throw or have \
-           the Charmed condition for the duration. The tar- \
-           get succeeds automatically if it isn't a Humanoid, if \
-           you're fighting it, or you have cast this spell on it \
-           within the past 24 hours.",
     type_1: null,
     type_2: null,
     type_3: null,
@@ -338,7 +278,7 @@
            the target. On a hit, the target takes 1d8 Radiant \
            damage, and until the end of your next turn, it emits \
            Dim Light in a 10 ft radius and can't benefit from \
-           the Invisable condition.",
+           the Invisible condition.",
     type_1: null,
     type_2: null,
     type_3: null,
@@ -353,6 +293,7 @@
     id: "thunderclap-0",
     level: 0,
     school: "evocation",
+    concentration: false,
     casting_time: "1 action",
     range: "self",
     components: ["S"],
@@ -383,10 +324,11 @@
     id: "true-strike-0",
     level: 0,
     school: "divination",
+    concentration: false,
     casting_time: "1 action",
     range: "self",
     components: ["S","M"],
-    material_desc: "a weapon with which you have proficiency and that is worth 1+ copper points",
+    material_desc: "a weapon with which you have proficiency and that is worth 1+ copper pieces",
     duration: [0, "seconds"],
     type_1_duration: null,
     type_2_duration: null,
@@ -446,3 +388,4 @@
   }
   // END: cantrips
 }
+
