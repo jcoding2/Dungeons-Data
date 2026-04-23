@@ -1,0 +1,311 @@
+{
+  // START: cantrips
+  {
+    name: "Blade Ward",
+    id: "blade-ward-0",
+    level: 0,
+    school: "abjuration",
+    concentration: true,
+    casting_time: "1 action",
+    range: "self",
+    components: ["V","S"],
+    material_desc: null,
+    duration: [1, "minute"],
+    type_1_duration: null,
+    type_2_duration: null,
+    type_3_duration: null,
+    type_4_duration: null,
+    type_5_duration: null,
+    type_6_duration: null,
+    desc: "Whenever a creature makes an attack roll against \
+          you before the spell ends, the attacker subtracts 1d4 \
+          from the attack roll.",
+    type_1: null,
+    type_2: null,
+    type_3: null,
+    type_4: null,
+    type_5: null,
+    type_6: null,
+  },
+  {
+    name: "Dancing Lights",
+    id: "dancing-lights-0",
+    level: 0,
+    school: "illusion",
+    concentration: true,
+    casting_time: "1 action",
+    range: [120, "ft"],
+    components: ["V","S","M"],
+    material_desc: "a bit of phosphorus",
+    duration: [1, "minute"],
+    type_1_duration: null,
+    type_2_duration: null,
+    type_3_duration: null,
+    type_4_duration: null,
+    type_5_duration: null,
+    type_6_duration: null,
+    desc: "You create up to four torch-size lights within range, \
+           making them appear as torches, lanterns or glow- \
+           ing orbs that hover for the duration. Alternatively, \
+           you combine the four lights into one flowing Me- \
+           dium form that is vaguely humanlike. Whichever \
+           form you choose, each light sheds Dim Light in a \
+           10-foot radius. \
+             As a Bonus Action, you can move the lights up \
+           to 60 feet to a space within range. A light must be \
+           within 20 feet of another light created by this spell, \
+           and a light vanishes if it exceeds the spell's range.",
+    type_1: null,
+    type_2: null,
+    type_3: null,
+    type_4: null,
+    type_5: null,
+    type_6: null,
+  },
+  {
+    name: "Friends",
+    id: "friends-0",
+    level: 0,
+    school: "enchantment",
+    concentration: true,
+    casting_time: "1 action",
+    range: [10, "ft"],
+    components: ["S","M"],
+    material_desc: "some makeup",
+    duration: [1, "minute"],
+    type_1_duration: null,
+    type_2_duration: null,
+    type_3_duration: null,
+    type_4_duration: null,
+    type_5_duration: null,
+    type_6_duration: null,
+    desc: "You magically emanate a sense of friendship toward \
+           one creature you can see within range. The target \
+           must succeed on a WIS saving throw or have \
+           the Charmed condition for the duration. The tar- \
+           get succeeds automatically if it isn't a Humanoid, if \
+           you're fighting it, or you have cast this spell on it \
+           within the past 24 hours.",
+    type_1: null,
+    type_2: null,
+    type_3: null,
+    type_4: null,
+    type_5: null,
+    type_6: null,
+  },
+  {
+    name: "Light",
+    id: "light-0",
+    level: 0,
+    school: "evocation",
+    concentration: false,
+    casting_time: "1 action",
+    range: "touch",
+    components: ["V","M"],
+    material_desc: "a firefly or phosphorescent moss",
+    duration: [1, "hour"],
+    type_1_duration: null,
+    type_2_duration: null,
+    type_3_duration: null,
+    type_4_duration: null,
+    type_5_duration: null,
+    type_6_duration: null,
+    desc: "You touch one Large or smaller object that isn't \
+           being worn or carried by someone else. Until the \
+           spell ends, the object sheds Bright Light in a 20-foot \
+           radius and Dim Light for another 20 feet. The \
+           light can be colored as you like. \
+             Covering the object with something opaque \
+           blocks the light. The spell ends if you cast it again.",
+    type_1: null,
+    type_2: null,
+    type_3: null,
+    type_4: null,
+    type_5: null,
+    type_6: null,
+  },
+  {
+    name: "Mage Hand",
+    id: "mage-hand-0",
+    level: 0,
+    school: "conjuration",
+    concentration: false,
+    casting_time: "1 action",
+    range: [30, "ft"],
+    components: ["V","S"],
+    material_desc: null,
+    duration: [1, "minute"],
+    type_1_duration: null,
+    type_2_duration: null,
+    type_3_duration: null,
+    type_4_duration: null,
+    type_5_duration: null,
+    type_6_duration: null,
+    desc: "A spectral, floating hand appears at a point you \
+           choose within range. The hand lasts for the dura- \
+           tion. The hand vanishes if it is ever more than 30 \
+           feet away from you or if you cast this spell again. \
+             When you cast the spell, you can use the hand \
+           to manipulate an object, open an unlocked door or \
+           container, stow or retrieve an item from an open \
+           container, or pour the contents out of a vial. \
+             As a Magic action on your later turns, you can \
+           control the hand thus again. As part of that action, \
+           you can move the hand up to 30 feet. \
+             The hand can't attack, activate magic items, or \
+           carry more than 10 pounds.",
+    type_1: null,
+    type_2: null,
+    type_3: null,
+    type_4: null,
+    type_5: null,
+    type_6: null,
+  },
+  {
+    name: "Mending",
+    id: "mending-0",
+    level: 0,
+    school: "transmutation",
+    concentration: false,
+    casting_time: "1 minute",
+    range: "touch",
+    components: ["V","S","M"],
+    material_desc: "two lodestones",
+    duration: [0, "seconds"],
+    type_1_duration: null,
+    type_2_duration: null,
+    type_3_duration: null,
+    type_4_duration: null,
+    type_5_duration: null,
+    type_6_duration: null,
+    desc: "This spell repairs a single break or tear in an object \
+           you touch, such as a broken chain link, two halves \
+           of a broken key, a torn cloak, or a leaking wineskin. \
+           As long as the break or tear is no larger than 1 foot \
+           in any dimension, you mend it, leaving no trace of \
+           the former damage. \
+             This spell can physically repair a magic item, but \
+           it can't restore magic to such an object.",
+    type_1: null,
+    type_2: null,
+    type_3: null,
+    type_4: null,
+    type_5: null,
+    type_6: null,
+  },
+  {
+    name: "Message",
+    id: "message-0",
+    level: 0,
+    school: "transmutation",
+    concentration: false,
+    casting_time: "1 action",
+    range: [120, "ft"],
+    components: ["S","M"],
+    material_desc: "a copper wire",
+    duration: [1, "round"],
+    type_1_duration: null,
+    type_2_duration: null,
+    type_3_duration: null,
+    type_4_duration: null,
+    type_5_duration: null,
+    type_6_duration: null,
+    desc: "You point toward a creature within range and \
+           whisper a message. The target (and only the target) \
+           hears the message and can reply in a whisper that
+           only you can hear.
+             You can cast this spell through solid objects if you \
+            are familiar with the target and know it is beyond \
+            the barrier. Magical silence; 1 foot of stone, metal or \
+            wood; or a thin sheet of lead blocks the spell.",
+    type_1: null,
+    type_2: null,
+    type_3: null,
+    type_4: null,
+    type_5: null,
+    type_6: null,
+  },
+  {
+    name: "Minor Illusion",
+    id: "minor-illusion-0",
+    level: 0,
+    school: "illusion",
+    concentration: false,
+    casting_time: "1 action",
+    range: [30, "ft"],
+    components: ["S","M"],
+    material_desc: "a bit of fleece",
+    duration: [1, "minute"],
+    type_1_duration: null,
+    type_2_duration: null,
+    type_3_duration: null,
+    type_4_duration: null,
+    type_5_duration: null,
+    type_6_duration: null,
+    desc: "You create a sound or an image of an object within \
+           range that lasts for the duration. See the descrip- \
+           tions below for the effects of each. The illusion ends \
+           if you cast this spell again.
+             If a creature takes a Study action to examine the \
+           sound or image, the creature can determine that it \
+           is an illusion with a successful INT (Investigation) \
+           check against your spell save DC. If a creature disc- \
+           erns the illusion for what it is, the illusion becomes \
+           faint to the creature.",
+    type_1: "  ***Sound.*** If you create a sound, its volume can \
+             range from a whisper to a scream. It can be your \
+             voice, someone else's voice, a lion's roar, a beating of \
+             drums, or any other sound you choose. The sound \
+             continues unabated throughout the duration, or you \
+             can make discrete sounds at different times before \
+             the spell ends.",
+    type_2: "  ***Image.*** If you create an image of an object--such \
+             as a chair, muddy footprints, or a small chest--it \
+             must be no larger than a 5 ft Cube. The image \
+             can't create sound, light, smell, or any other sensory \
+             effect. Physical interation with the image reveals it \
+             to be an illusion, since things can pass through it.",
+    type_3: null,
+    type_4: null,
+    type_5: null,
+    type_6: null,
+  },
+  {
+    name: "Prestidigitation",
+    id: "prestidigitation-0",
+    level: 0,
+    school: "transmutation",
+    concentration: false,
+    casting_time: [1, "action"],
+    range: [10, "ft"],
+    components: ["V","S"],
+    material_desc: null,
+    duration: null,
+    type_1_duration: [0, "seconds"],
+    type_2_duration: [0, "seconds"],
+    type_3_duration: [0, "seconds"],
+    type_4_duration: [1, "hour"],
+    type_5_duration: [1, "hour"],
+    type_6_duration: [0, "seconds"],
+    desc: "You create a magical effect within range. Choose \
+           the effect from the options below. If you cast this \
+           spell multiple times, you can have up to three of its \
+           non-instantaneous effects active at a time.",
+    type_1: "  ***Sensory Effect.*** You create an instantaneous, \
+             harmless sensory effect, such as a shower of sparks, \
+             a puff of wind, faint musical notes, or an odd odor.",
+    type_2: "  ***Fire Play.*** You instantaneously light or snuff out a \
+             candle, a torch, or a small campfire.",
+    type_3: "  ***Clean or Soil.*** You instantaneously clean or soil an \
+             object no longer than 1 cubic foot.",
+    type_4: "  ***Minor Sensation.*** You chill, warm, or flavor up to 1 \
+             cubic foot of nonliving material for 1 hour.",
+    type_5: "  ***Magic Mark.*** You create a color, a small mark, or a \
+             symbol appear on an object or a surface for 1 hour.",
+    type_6: "  ***Minor Creation.*** You create a nonmagical trinket \
+             or an illusory image that can fit in your hand. It \
+             lasts until the end of your next turn. A trinket can \
+             deal no damage and has no monetary worth."
+  },
+  // END: cantrips
+}
