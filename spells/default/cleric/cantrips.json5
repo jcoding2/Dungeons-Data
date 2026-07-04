@@ -12,24 +12,10 @@
     casting_time: "1 action",
     range: "touch",
     components: ["V","S"],
-    material_desc: null,
     duration: [1, "minute"],
-    type_1_duration: null,
-    type_2_duration: null,
-    type_3_duration: null,
-    type_4_duration: null,
-    type_5_duration: null,
-    type_6_duration: null,
     desc: "You touch a willing creature and choose a skill. Un- \
            til the spell ends, the creature adds 1d4 to any abil-
            ity check using the chosen skill."
-    type_1: null,
-    type_2: null,
-    type_3: null,
-    type_4: null,
-    type_5: null,
-    type_6: null,
-    cantrip_upgrade: null,
   },
   {
     name: "Light",
@@ -42,12 +28,6 @@
     components: ["V","M"],
     material_desc: "a firefly or phosphorescent moss",
     duration: [1, "hour"],
-    type_1_duration: null,
-    type_2_duration: null,
-    type_3_duration: null,
-    type_4_duration: null,
-    type_5_duration: null,
-    type_6_duration: null,
     desc: "You touch one Large or smaller object that isn't \
            being worn or carried by someone else. Until the \
            spell ends, the object sheds Bright Light in a 20-foot \
@@ -55,13 +35,6 @@
            light can be colored as you like. \
              Covering the object with something opaque \
            blocks the light. The spell ends if you cast it again.",
-    type_1: null,
-    type_2: null,
-    type_3: null,
-    type_4: null,
-    type_5: null,
-    type_6: null,
-    cantrip_upgrade: null,
   },
   {
     name: "Mending",
@@ -74,12 +47,6 @@
     components: ["V","S","M"],
     material_desc: "two lodestones",
     duration: [0, "seconds"],
-    type_1_duration: null,
-    type_2_duration: null,
-    type_3_duration: null,
-    type_4_duration: null,
-    type_5_duration: null,
-    type_6_duration: null,
     desc: "This spell repairs a single break or tear in an object \
            you touch, such as a broken chain link, two halves \
            of a broken key, a torn cloak, or a leaking wineskin. \
@@ -88,13 +55,6 @@
            the former damage. \
              This spell can physically repair a magic item, but \
            it can't restore magic to such an object.",
-    type_1: null,
-    type_2: null,
-    type_3: null,
-    type_4: null,
-    type_5: null,
-    type_6: null,
-    cantrip_upgrade: null,
   },
   {
     name: "Resistance",
@@ -105,14 +65,7 @@
     casting_time: "1 action",
     range: "touch",
     components: ["V","S"],
-    material_desc: null,
     duration: [1, "minute"],
-    type_1_duration: null,
-    type_2_duration: null,
-    type_3_duration: null,
-    type_4_duration: null,
-    type_5_duration: null,
-    type_6_duration: null,
     desc: "You touch a willing creature and choose a damage \
            type: Acid, Bludgeoning, Cold, Fire, Lightning, Ne- \
            crotic, Piercing, Poison, Radiant, Slashing, or Thun- \
@@ -120,13 +73,6 @@
            type before the spell ends, the creature reduces the \
            total damage taken by 1d4. A creature can benefit \
            from this spell only once per turn.",
-    type_1: null,
-    type_2: null,
-    type_3: null,
-    type_4: null,
-    type_5: null,
-    type_6: null,
-    cantrip_upgrade: null,
   },
   {
     name: "Sacred Flame",
@@ -137,27 +83,13 @@
     casting_time: "1 action",
     range: [60, "ft"],
     components: ["V","S"],
-    material_desc: null,
     duration: [0, "seconds"],
-    type_1_duration: null,
-    type_2_duration: null,
-    type_3_duration: null,
-    type_4_duration: null,
-    type_5_duration: null,
-    type_6_duration: null,
     desc: "Flame-like radiance descends on a creature that you \
            can see within range. The target must succeed on \
            a DEX saving throw or take 1d8 Radiant damage. \
            The target gains no benefit from Half Cover or \
-           Three-Quarters Cover for this save."
-    type_1: null,
-    type_2: null,
-    type_3: null,
-    type_4: null,
-    type_5: null,
-    type_6: null,
-    cantrip_upgrade: "***Cantrip Upgrade.*** The damage increases by 1d8 \
-                      when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).",
+           Three-Quarters Cover for this save.",
+    cantrip_upgrade: "The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).",
   },
   {
     name: "Spare the Dying",
@@ -168,24 +100,10 @@
     casting_time: "1 action",
     range: [15, "ft"],
     components: ["V","S"],
-    material_desc: null,
     duration: [0, "seconds"],
-    type_1_duration: null,
-    type_2_duration: null,
-    type_3_duration: null,
-    type_4_duration: null,
-    type_5_duration: null,
-    type_6_duration: null,
     desc: "Choose a creature within range that has 0 HP \
-           and isn't dead. The creature becomes Stable."
-    type_1: null,
-    type_2: null,
-    type_3: null,
-    type_4: null,
-    type_5: null,
-    type_6: null,   
-    cantrip_upgrade: "***Cantrip Upgrade.*** The range doubles when you \
-                      reach levels 5 (30 ft), 11 (60 ft), and 17 (120 ft).",
+           and isn't dead. The creature becomes Stable.",
+    cantrip_upgrade: "The range doubles when you reach levels 5 (30 ft), 11 (60 ft), and 17 (120 ft).",
   },
   {
     name: "Thaumaturgy",
@@ -196,33 +114,41 @@
     casting_time: "1 action",
     range: [30, "ft"],
     components: ["V"],
-    material_desc: null,
-    duration: null,
-    type_1_duration: [1, "minute"],
-    type_2_duration: [1, "minute"],
-    type_3_duration: [1, "minute"],
-    type_4_duration: [0, "seconds"],
-    type_5_duration: [0, "seconds"],
-    type_6_duration: [1, "minute"],
     desc: "You manifest a minor wonder within range. You \
            create one of the effects below within range. If you \
            cast this spell multiple times, you can have up to \
            three of its 1-minute effects active at a time.",
-    type_1: "***Altered Eyes.*** You alter the appearance of your \
-             eyes for 1 minute.",
-    type_2: "***Booming Voice.*** Your voice booms up to three \
-             times as loud as normal for 1 minute. For the dura- \
-             tion, you have Advantage on CHA (Intimidation) checks."
-    type_3: "***Fire Play.*** You cause flames to flicker, brighten, \
-             dim or change color for 1 minute.",
-    type_4: "***Invisible Hand.*** You instantaneously cause an un- \
-             locked door or window to fly open or slam shut."
-    type_5: "***Phantom Sound.*** You create an instantaneous \
-             sound that originates from a point of your choice \
-             within range, such as a rumble of thunder, the cry \
-             of a raven, or ominous whispers.",
-    type_6: "***Tremors.*** You create harmless tremors in the \
-             ground for one minute.",
-    cantrip_upgrade: null,
+    effects: [
+      {
+        name: "Altered Eyes",
+        desc: "You alter the appearance of your eyes for 1 minute.",
+        duration: [1, "minute"],
+      },
+      {
+        name: "Booming Voice",
+        desc: "Your voice booms up to three times as loud as normal for 1 minute. For the duration, you have Advantage on CHA (Intimidation) checks.",
+        duration: [1, "minute"],
+      },
+      {
+        name: "Fire Play",
+        desc: "You cause flames to flicker, brighten, dim or change color for 1 minute.",
+        duration: [1, "minute"],
+      },
+      {
+        name: "Invisible Hand",
+        desc: "You instantaneously cause an unlocked door or window to fly open or slam shut.",
+        duration: [0, "seconds"],
+      },
+      {
+        name: "Phantom Sound",
+        desc: "You create an instantaneous sound that originates from a point of your choice within range, such as a rumble of thunder, the cry of a raven, or ominous whispers.",
+        duration: [0, "seconds"],
+      },
+      {
+        name: "Tremors",
+        desc: "You create harmless tremors in the ground for one minute.",
+        duration: [1, "minute"],
+      },
+    ],
   },
 }
