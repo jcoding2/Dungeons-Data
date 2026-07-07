@@ -1,0 +1,11 @@
+{
+    "[python]": {
+        "editor.indentSize": 4
+    },
+    "[c]": {
+        "editor.indentSize": 8
+    },
+    "[JSON5]": {
+        "editor.indentSize": 2
+    }
+}

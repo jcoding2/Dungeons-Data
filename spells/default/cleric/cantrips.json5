@@ -3,152 +3,156 @@
 // Commons Attribution 4.0 International License, available at https://creativecommons.org/licenses/by/4.0/legalcode.
 
 {
-  {
-    name: "Guidance",
-    id: "guidance-0",
-    level: 0,
-    school: "divination",
-    concentration: true,
-    casting_time: "1 action",
-    range: "touch",
-    components: ["V","S"],
-    duration: [1, "minute"],
-    desc: "You touch a willing creature and choose a skill. Un- \
-           til the spell ends, the creature adds 1d4 to any abil-
-           ity check using the chosen skill."
-  },
-  {
-    name: "Light",
-    id: "light-0",
-    level: 0,
-    school: "evocation",
-    concentration: false,
-    casting_time: "1 action",
-    range: "touch",
-    components: ["V","M"],
-    material_desc: "a firefly or phosphorescent moss",
-    duration: [1, "hour"],
-    desc: "You touch one Large or smaller object that isn't \
-           being worn or carried by someone else. Until the \
-           spell ends, the object sheds Bright Light in a 20-foot \
-           radius and Dim Light for another 20 feet. The \
-           light can be colored as you like. \
-             Covering the object with something opaque \
-           blocks the light. The spell ends if you cast it again.",
-  },
-  {
-    name: "Mending",
-    id: "mending-0",
-    level: 0,
-    school: "transmutation",
-    concentration: false,
-    casting_time: "1 minute",
-    range: "touch",
-    components: ["V","S","M"],
-    material_desc: "two lodestones",
-    duration: [0, "seconds"],
-    desc: "This spell repairs a single break or tear in an object \
-           you touch, such as a broken chain link, two halves \
-           of a broken key, a torn cloak, or a leaking wineskin. \
-           As long as the break or tear is no larger than 1 foot \
-           in any dimension, you mend it, leaving no trace of \
-           the former damage. \
-             This spell can physically repair a magic item, but \
-           it can't restore magic to such an object.",
-  },
-  {
-    name: "Resistance",
-    id: "resistance-0",
-    level: 0,
-    school: "abjuration",
-    concentration: true,
-    casting_time: "1 action",
-    range: "touch",
-    components: ["V","S"],
-    duration: [1, "minute"],
-    desc: "You touch a willing creature and choose a damage \
-           type: Acid, Bludgeoning, Cold, Fire, Lightning, Ne- \
-           crotic, Piercing, Poison, Radiant, Slashing, or Thun- \
-           der. When the creature takes damage of the chosen \
-           type before the spell ends, the creature reduces the \
-           total damage taken by 1d4. A creature can benefit \
-           from this spell only once per turn.",
-  },
-  {
-    name: "Sacred Flame",
-    id: "sacred-flame-0",
-    level: 0,
-    school: "evocation",
-    concentration: false,
-    casting_time: "1 action",
-    range: [60, "ft"],
-    components: ["V","S"],
-    duration: [0, "seconds"],
-    desc: "Flame-like radiance descends on a creature that you \
-           can see within range. The target must succeed on \
-           a DEX saving throw or take 1d8 Radiant damage. \
-           The target gains no benefit from Half Cover or \
-           Three-Quarters Cover for this save.",
-    cantrip_upgrade: "The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).",
-  },
-  {
-    name: "Spare the Dying",
-    id: "spare-the-dying-0",
-    level: 0,
-    school: "necromancy",
-    concentration: false,
-    casting_time: "1 action",
-    range: [15, "ft"],
-    components: ["V","S"],
-    duration: [0, "seconds"],
-    desc: "Choose a creature within range that has 0 HP \
-           and isn't dead. The creature becomes Stable.",
-    cantrip_upgrade: "The range doubles when you reach levels 5 (30 ft), 11 (60 ft), and 17 (120 ft).",
-  },
-  {
-    name: "Thaumaturgy",
-    id: "thaumatugy-0",
-    level: 0,
-    school: "transmutation",
-    concentration: false,
-    casting_time: "1 action",
-    range: [30, "ft"],
-    components: ["V"],
-    desc: "You manifest a minor wonder within range. You \
-           create one of the effects below within range. If you \
-           cast this spell multiple times, you can have up to \
-           three of its 1-minute effects active at a time.",
-    effects: [
-      {
-        name: "Altered Eyes",
-        desc: "You alter the appearance of your eyes for 1 minute.",
-        duration: [1, "minute"],
-      },
-      {
-        name: "Booming Voice",
-        desc: "Your voice booms up to three times as loud as normal for 1 minute. For the duration, you have Advantage on CHA (Intimidation) checks.",
-        duration: [1, "minute"],
-      },
-      {
-        name: "Fire Play",
-        desc: "You cause flames to flicker, brighten, dim or change color for 1 minute.",
-        duration: [1, "minute"],
-      },
-      {
-        name: "Invisible Hand",
-        desc: "You instantaneously cause an unlocked door or window to fly open or slam shut.",
-        duration: [0, "seconds"],
-      },
-      {
-        name: "Phantom Sound",
-        desc: "You create an instantaneous sound that originates from a point of your choice within range, such as a rumble of thunder, the cry of a raven, or ominous whispers.",
-        duration: [0, "seconds"],
-      },
-      {
-        name: "Tremors",
-        desc: "You create harmless tremors in the ground for one minute.",
-        duration: [1, "minute"],
-      },
-    ],
+  name: "Cleric Cantrips (SRD)",
+
+  spells: {
+    cleric_guidance_0: {
+      name: "Guidance",
+      id: "cleric_guidance_0",
+      level: 0,
+      school: "divination",
+      concentration: true,
+      casting_time: "1 action",
+      range: "touch",
+      components: ["V","S"],
+      duration: [1, "minute"],
+      desc: "You touch a willing creature and choose a skill. Un- \
+            til the spell ends, the creature adds 1d4 to any abil-
+            ity check using the chosen skill."
+    },
+    cleric_light_0: {
+      name: "Light",
+      id: "cleric_light_0",
+      level: 0,
+      school: "evocation",
+      concentration: false,
+      casting_time: "1 action",
+      range: "touch",
+      components: ["V","M"],
+      material_desc: "a firefly or phosphorescent moss",
+      duration: [1, "hour"],
+      desc: "You touch one Large or smaller object that isn't \
+            being worn or carried by someone else. Until the \
+            spell ends, the object sheds Bright Light in a 20-foot \
+            radius and Dim Light for another 20 feet. The \
+            light can be colored as you like. \
+            Covering the object with something opaque \
+            blocks the light. The spell ends if you cast it again.",
+    },
+    cleric_mending_0: {
+      name: "Mending",
+      id: "cleric_mending_0",
+      level: 0,
+      school: "transmutation",
+      concentration: false,
+      casting_time: "1 minute",
+      range: "touch",
+      components: ["V","S","M"],
+      material_desc: "two lodestones",
+      duration: [0, "seconds"],
+      desc: "This spell repairs a single break or tear in an object \
+            you touch, such as a broken chain link, two halves \
+            of a broken key, a torn cloak, or a leaking wineskin. \
+            As long as the break or tear is no larger than 1 foot \
+            in any dimension, you mend it, leaving no trace of \
+            the former damage. \
+            This spell can physically repair a magic item, but \
+            it can't restore magic to such an object.",
+    },
+    cleric_resistance_0: {
+      name: "Resistance",
+      id: "cleric_resistance_0",
+      level: 0,
+      school: "abjuration",
+      concentration: true,
+      casting_time: "1 action",
+      range: "touch",
+      components: ["V","S"],
+      duration: [1, "minute"],
+      desc: "You touch a willing creature and choose a damage \
+            type: Acid, Bludgeoning, Cold, Fire, Lightning, Ne- \
+            crotic, Piercing, Poison, Radiant, Slashing, or Thun- \
+            der. When the creature takes damage of the chosen \
+            type before the spell ends, the creature reduces the \
+            total damage taken by 1d4. A creature can benefit \
+            from this spell only once per turn.",
+    },
+    cleric_sacred_flame_0: {
+      name: "Sacred Flame",
+      id: "cleric_sacred_flame_0",
+      level: 0,
+      school: "evocation",
+      concentration: false,
+      casting_time: "1 action",
+      range: [60, "ft"],
+      components: ["V","S"],
+      duration: [0, "seconds"],
+      desc: "Flame-like radiance descends on a creature that you \
+            can see within range. The target must succeed on \
+            a DEX saving throw or take 1d8 Radiant damage. \
+            The target gains no benefit from Half Cover or \
+            Three-Quarters Cover for this save.",
+      cantrip_upgrade: "The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).",
+    },
+    cleric_spare_the_dying_0: {
+      name: "Spare the Dying",
+      id: "cleric_spare_the_dying_0",
+      level: 0,
+      school: "necromancy",
+      concentration: false,
+      casting_time: "1 action",
+      range: [15, "ft"],
+      components: ["V","S"],
+      duration: [0, "seconds"],
+      desc: "Choose a creature within range that has 0 HP \
+            and isn't dead. The creature becomes Stable.",
+      cantrip_upgrade: "The range doubles when you reach levels 5 (30 ft), 11 (60 ft), and 17 (120 ft).",
+    },
+    cleric_thaumaturgy_0: {
+      name: "Thaumaturgy",
+      id: "cleric_thaumaturgy_0",
+      level: 0,
+      school: "transmutation",
+      concentration: false,
+      casting_time: "1 action",
+      range: [30, "ft"],
+      components: ["V"],
+      desc: "You manifest a minor wonder within range. You \
+            create one of the effects below within range. If you \
+            cast this spell multiple times, you can have up to \
+            three of its 1-minute effects active at a time.",
+      effects: [
+        {
+          name: "Altered Eyes",
+          desc: "You alter the appearance of your eyes for 1 minute.",
+          duration: [1, "minute"],
+        },
+        {
+          name: "Booming Voice",
+          desc: "Your voice booms up to three times as loud as normal for 1 minute. For the duration, you have Advantage on CHA (Intimidation) checks.",
+          duration: [1, "minute"],
+        },
+        {
+          name: "Fire Play",
+          desc: "You cause flames to flicker, brighten, dim or change color for 1 minute.",
+          duration: [1, "minute"],
+        },
+        {
+          name: "Invisible Hand",
+          desc: "You instantaneously cause an unlocked door or window to fly open or slam shut.",
+          duration: [0, "seconds"],
+        },
+        {
+          name: "Phantom Sound",
+          desc: "You create an instantaneous sound that originates from a point of your choice within range, such as a rumble of thunder, the cry of a raven, or ominous whispers.",
+          duration: [0, "seconds"],
+        },
+        {
+          name: "Tremors",
+          desc: "You create harmless tremors in the ground for one minute.",
+          duration: [1, "minute"],
+        },
+      ],
+    },
   },
 }
