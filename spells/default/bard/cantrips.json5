@@ -4,8 +4,9 @@
 
 {
   name: "Bard Cantrips (SRD)",
-  date_added: "7/7/2026",
-  source: "SRD 5.2.1",
+  date_added: "4/22/2026",
+  last_updated: "9/3/2026",
+  source: "System Reference Document v5.2.1",
   author: "Dungeons & Data authors",
   spells: {
     bard_dancing_lights_0: {
@@ -135,8 +136,8 @@
             check against your spell save DC. If a creature disc- \
             erns the illusion for what it is, the illusion becomes \
             faint to the creature.",
-      effects: [
-        {
+      effects: {
+        sound: {
           name: "Sound",
           desc: "If you create a sound, its volume can \
                 range from a whisper to a scream. It can be your \
@@ -146,7 +147,7 @@
                 can make discrete sounds at different times before \
                 the spell ends.",
         },
-        {
+        image: {
           name: "Image",
           desc: "If you create an image of an object--such \
                 as a chair, muddy footprints, or a small chest--it \
@@ -155,7 +156,7 @@
                 effect. Physical interation with the image reveals it \
                 to be an illusion, since things can pass through it.",
         },
-      ],
+      },
     },
     bard_prestidigitation_0: {
       name: "Prestidigitation",
@@ -170,40 +171,40 @@
             the effect from the options below. If you cast this \
             spell multiple times, you can have up to three of its \
             non-instantaneous effects active at a time.",
-      effects: [
-        {
+      effects: {
+        sensory_effect: {
           name: "Sensory Effect",
           desc: "You create an instantaneous, harmless sensory effect, such as a shower of sparks, \
                 a puff of wind, faint musical notes, or an odd odor.",
           duration: [0, "seconds"],
         },
-        {
+        fire_play: {
           name: "Fire Play",
           desc: "You instantaneously light or snuff out a candle, a torch, or a small campfire.",
           duration: [0, "seconds"],
         },
-        {
+        clean_or_soil: {
           name: "Clean or Soil",
           desc: "You instantaneously clean or soil an object no longer than 1 cubic foot.",
           duration: [0, "seconds"],
         },
-        {
+        minor_sensation: {
           name: "Minor Sensation",
           desc: "You chill, warm, or flavor up to 1 cubic foot of nonliving material for 1 hour.",
           duration: [1, "hour"],
         },
-        {
+        magic_mark: {
           name: "Magic Mark",
           desc: "You create a color, a small mark, or a symbol appear on an object or a surface for 1 hour.",
           duration: [1, "hour"],
         },
-        {
+        minor_creation: {
           name: "Minor Creation",
           desc: "You create a nonmagical trinket or an illusory image that can fit in your hand. It \
                 lasts until the end of your next turn. A trinket can deal no damage and has no monetary worth.",
           duration: [0, "seconds"],
         },
-      ],
+      },
     },
     bard_starry_wisp_0: {
       name: "Starry Wisp",

@@ -4,7 +4,10 @@
 
 {
   name: "Cleric Cantrips (SRD)",
-
+  date_added: "4/23/2026",
+  last_updated: "9/3/2026",
+  source: "System Reference Document v5.2.1",
+  author: "Dungeons & Data authors",
   spells: {
     cleric_guidance_0: {
       name: "Guidance",
@@ -121,38 +124,38 @@
             create one of the effects below within range. If you \
             cast this spell multiple times, you can have up to \
             three of its 1-minute effects active at a time.",
-      effects: [
-        {
+      effects: {
+        altered_eyes: {
           name: "Altered Eyes",
           desc: "You alter the appearance of your eyes for 1 minute.",
           duration: [1, "minute"],
         },
-        {
+        booming_voice: {
           name: "Booming Voice",
           desc: "Your voice booms up to three times as loud as normal for 1 minute. For the duration, you have Advantage on CHA (Intimidation) checks.",
           duration: [1, "minute"],
         },
-        {
+        fire_play: {
           name: "Fire Play",
           desc: "You cause flames to flicker, brighten, dim or change color for 1 minute.",
           duration: [1, "minute"],
         },
-        {
+        invisible_hand: {
           name: "Invisible Hand",
           desc: "You instantaneously cause an unlocked door or window to fly open or slam shut.",
           duration: [0, "seconds"],
         },
-        {
+        phantom_sound: {
           name: "Phantom Sound",
           desc: "You create an instantaneous sound that originates from a point of your choice within range, such as a rumble of thunder, the cry of a raven, or ominous whispers.",
           duration: [0, "seconds"],
         },
-        {
+        tremors: {
           name: "Tremors",
           desc: "You create harmless tremors in the ground for one minute.",
           duration: [1, "minute"],
         },
-      ],
+      },
     },
   },
 }

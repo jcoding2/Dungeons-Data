@@ -5,9 +5,21 @@
 {
   name: "Druid Cantrips (SRD)",
   date_added: "7/7/2026",
-  source: "SRD 5.2.1",
+  last_updated: "9/3/2026",
+  source: "System Reference Document 5.2.1",
   author: "Dungeons & Data authors",
   spells: {
-
+    druid_druidcraft_0: {
+      name: "Druidcraft",
+      id: "druid_druidcraft_0",
+      level: 0,
+      school: "transmutation",
+      concentration: false,
+      casting_time: "1 action",
+      range: [30, "ft"],
+      components: ["V", "S"],
+      desc: "Whispering to the spirits of nature, you create one of the following effects within range.",
+      
+    }
   }
 }
