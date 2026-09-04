@@ -20,7 +20,7 @@
       components: ["V","S"],
       duration: [1, "minute"],
       desc: "You touch a willing creature and choose a skill. Un- \
-            til the spell ends, the creature adds 1d4 to any abil-
+            til the spell ends, the creature adds 1d4 to any abil- \
             ity check using the chosen skill."
     },
     cleric_light_0: {

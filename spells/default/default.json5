@@ -10,5 +10,5 @@
   last_updated: "9/3/2026",
   source: "System Reference Document v5.2.1",
   author: "Dungeons and Data authors",
-  classes: {"bard", "cleric", "druid", "paladin", "ranger", "sorcerer", "warlock", "wizard"}
+  classes: ["bard", "cleric", "druid", "paladin", "ranger", "sorcerer", "warlock", "wizard"]
 }

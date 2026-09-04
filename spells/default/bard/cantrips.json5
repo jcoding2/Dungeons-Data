@@ -26,7 +26,7 @@
             you combine the four lights into one flowing Me- \
             dium form that is vaguely humanlike. Whichever \
             form you choose, each light sheds Dim Light in a \
-            10-foot radius. \n
+            10-foot radius. \
             As a Bonus Action, you can move the lights up \
             to 60 feet to a space within range. A light must be \
             within 20 feet of another light created by this spell, \
@@ -64,11 +64,11 @@
       desc: "A spectral, floating hand appears at a point you \
             choose within range. The hand lasts for the dura- \
             tion. The hand vanishes if it is ever more than 30 \
-            feet away from you or if you cast this spell again. \n
+            feet away from you or if you cast this spell again. \
             When you cast the spell, you can use the hand \
             to manipulate an object, open an unlocked door or \
             container, stow or retrieve an item from an open \
-            container, or pour the contents out of a vial. \n
+            container, or pour the contents out of a vial. \
             As a Magic action on your later turns, you can \
             control the hand thus again. As part of that action, \
             you can move the hand up to 30 feet. \
@@ -129,7 +129,7 @@
       desc: "You create a sound or an image of an object within \
             range that lasts for the duration. See the descrip- \
             tions below for the effects of each. The illusion ends \
-            if you cast this spell again.\n
+            if you cast this spell again.\
             If a creature takes a Study action to examine the \
             sound or image, the creature can determine that it \
             is an illusion with a successful INT (Investigation) \
