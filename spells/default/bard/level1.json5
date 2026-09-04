@@ -1,0 +1,168 @@
+// This work includes material from the System Reference Document 5.2.1 (“SRD 5.2.1”) by Wizards of the
+// Coast LLC, available at https://www.dndbeyond.com/srd. The SRD 5.2.1 is licensed under the Creative
+// Commons Attribution 4.0 International License, available at https://creativecommons.org/licenses/by/4.0/legalcode.
+
+{
+  name: "Bard Level 1 Spells (SRD)",
+  date_added: "September 4, 2026",
+  last_updated: "September 4, 2026",
+  source: "System Reference Document v5.2.1",
+  author: "Dungeons & Data authors",
+  spells: {
+    bard_animal_friendship_1: {
+      name: "Animal Friendship",
+      id: "bard_animal_friendship_1",
+      level: 1,
+      school: "enchantment",
+      concentration: false,
+      casting_time: "1 action",
+      range: [60, "ft"],
+      components: ["V","S","M"],
+      material_desc: "a morsel of food",
+      duration: [24, "hour"],
+      desc: "Target a Beast that you can see within range. The target must succeed on a Wisdom saving throw or have the Charmed condition for the duration. If you or one of your allies deals damage to the target, the spell ends.",
+      higher_levels: "You can target one additional Beast for each spell slot level above 1."
+    },
+    bard_bane_1: {
+      name: "Bane",
+      id: "bard_bane_1",
+      level: 1,
+      school: "enchantment",
+      concentration: true,
+      casting_time: "1 action",
+      range: [30, "ft"],
+      components: ["V","S","M"],
+      material_desc: "a drop of blood",
+      duration: [1, "minute"],
+      desc: "Up to three creatures of your choice that you can see within range must each make a CHA saving throw. Whenever a target fails this save makes an attack or saving throw roll before the spell ends, the target must subtract 1d4 from the attack roll or save.",
+      higher_levels: "You can target one additional creature for each spell slot level above 1."
+    },
+    bard_charm_person_1: {
+      name: "Charm Person",
+      id: "bard_charm_person_1",
+      level: 1,
+      school: "enchantment",
+      concentration: false,
+      casting_time: "1 action",
+      range: [30, "ft"],
+      components: ["V","S"],
+      duration: [1, "hour"],
+      desc: "One Humanoid you can see within range makes a WIS saving throw. It does so with Advantage if you (or your allies) are fighting it. On a failed save, the target has the Charmed condition until the spell ends or until you or your allies damage it. The Charmed creature is Friendly to you. When the spell ends, the target knows it was Charmed by you.",
+      higher_levels: "You can target one additional creature for each spell slot level above 1."
+    },
+    bard_color_spray_1: {
+      name: "Color Spray",
+      id: "bard_color_spray_1",
+      level: 1,
+      school: "illusion",
+      concentration: false,
+      casting_time: "1 action",
+      range: "self",
+      components: ["V","S","M"],
+      material_desc: "a pinch of colorful sand",
+      duration: [0, "seconds"],
+      desc: "You launch a dazzling array of flashing, colorful light. Each creature in a 15-foot Cone originating from you must succeed on a CON saving throw or have the Blinded condition until the end of your next turn."
+    },
+    bard_command_1: {
+      name: "Command",
+      id: "bard_command_1",
+      level: 1,
+      school: "enchantment",
+      concentration: false,
+      casting_time: "1 action",
+      range: [60, "ft"],
+      components: ["V"],
+      duration: [0, "seconds"],
+      desc: "You speak a one-word command to a creature you can see within range. The target must succeed on a WIS saving throw or follow the command on its next turn. Choose the command from these options:",
+      effects: {
+        approach: {
+          name: "Approach",
+          desc: "The target moves toward you by the shortest and most direct route, ending its turn if it moves within 5 ft. of you."
+        },
+        drop: {
+          name: "Drop",
+          desc: "The target drops whatever it's holding and then ends its turn."
+        },
+        flee: {
+          name: "Flee",
+          desc: "The target spends its turn moving away from you by the fastest available means."
+        },
+        grovel: {
+          name: "Grovel",
+          desc: "The target has the Prone condition and then ends its turn."
+        },
+        halt: {
+          name: "Halt",
+          desc: "On its turn, the target doesn't move and takes no action nor Bonus Action."
+        }
+      },
+      higher_levels: "You can affect one additional creature for each spell slot level above 1."
+    },
+    bard_comprehend_languages_1: {
+      name: "Comprehend Languages",
+      id: "bard_comprehend_languages_1",
+      level: 1,
+      school: "divination",
+      concentration: false,
+      casting_time: "1 action, or 1 ritual",
+      range: "self",
+      components: ["V","S","M"],
+      material_desc: "a pinch of soot and salt",
+      duration: [1, "hour"],
+      desc: "For the duration, you understand the literal meaning of any language that you hear or see signed. You also understand any written langauge that you see, but you must be touching the surface on which the words are written. It takes about 1 minute to read one page of text. This spell doesn't decode symbols or secret messages."
+    },
+    bard_cure_wounds_1: {
+      name: "Cure Wounds",
+      id: "bard_cure_wounds_1",
+      level: 1,
+      school: "abjuration",
+      concentration: false,
+      casting_time: "1 action",
+      range: "touch",
+      components: ["V","S"],
+      duration: [0, "seconds"],
+      desc: "A creature you touch regains a number of hit points equal to 2d8 plus your spellcasting ability modifier.",
+      higher_levels: "The healing increases by 2d8 for each spell slot level above 1."
+    },
+    bard_detect_magic_1: {
+      name: "Detect Magic",
+      id: "bard_detect_magic_1",
+      level: 1,
+      school: "divination",
+      concentration: true,
+      casting_time: "1 action, or 1 ritual",
+      range: "self",
+      components: ["V","S"],
+      duration: [10, "minute"],
+      desc: "For the duration, you sense the presence of magical effects within 30 ft. of yourself. If you sense such effects, you can take the Magic action to see a faint aura around any visible creature or object in the area that bears the magic, and if an effect was created by a spell, you learn the spell's school of magic. The spell is blocked by 1 ft. of stone, dirt, or wood; or a thin sheet of lead.",
+    },
+    bard_disguise_self_1: {
+      name: "Disguise Self",
+      id: "bard_disguise_self_1",
+      level: 1,
+      school: "illusion",
+      concentration: false,
+      casting_time: "1 action",
+      range: "self",
+      components: ["V","S"],
+      duration: [1, "hour"],
+      desc: "You make yourself--including your clothing, armor, weapons and other belongings on your person--look different until the spell ends. You can seem 1 foot shorter or taller and can appear heavier or lighter. You must adopt a form that has the same basic arrangement of limbs as you have. Otherwise, the extent of the illusion is up to you. \
+             The changes wrought by this spell fail to hold up to physical inspection. For example, if you use this spell to add a hat to your outfit, objects pass through the hat, and anyone who touches would feel nothing. \
+             To discern that you are disguised, a creature must take the Study action to inspect your appearance and succeed on an INT (Investigation) check against your spell save DC."
+    },
+    bard_dissonant_whispers_1: {
+      name: "Dissonant Whispers",
+      id: "bard_dissonant_whispers_1",
+      level: 1,
+      school: "enchantment",
+      concentration: false,
+      casting_time: "1 action",
+      range: [60, "ft"],
+      components: ["V"],
+      duration: [0, "seconds"],
+      desc: "One creature of your choice that you can see within range hears a discordant melody in its mind. The target makes a WIS saving throw. On a failed save, it takes 3d6 Psychic damage and must immediately use its Reaction, if available, to move as far away from you as it can, using the safest route. On a successful save, the target takes half damage only.",
+      higher_levels:  "The damage increases by 1d6 for each spell slot level above 1."
+    },
+    
+  }
+}

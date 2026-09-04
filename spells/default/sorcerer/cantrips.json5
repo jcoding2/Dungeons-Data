@@ -8,6 +8,7 @@
   last_updated: "September 4th, 2026",
   source: "System Reference Document v5.2.1",
   author: "Dungeons & Data authors",
+  spell_count: 16,
   spells: {
     sorcerer_acid_splash_0: {
       name: "Acid Splash",
