@@ -3,15 +3,48 @@
 // Commons Attribution 4.0 International License, available at https://creativecommons.org/licenses/by/4.0/legalcode.
 
 {
-  name: "Bard Cantrips (SRD)",
-  date_added: "4/22/2026",
-  last_updated: "9/3/2026",
+  name: "Sorcerer Cantrips (SRD)",
+  date_added: "September 3rd, 2026",
+  last_updated: "September 4th, 2026",
   source: "System Reference Document v5.2.1",
   author: "Dungeons & Data authors",
   spells: {
-    bard_dancing_lights_0: {
+    sorcerer_acid_splash_0: {
+      name: "Acid Splash",
+      id: "sorcerer_acid_splash_0",
+      level: 0,
+      school: "evocation",
+      concentration: false,
+      casting_time: "1 action",
+      range: [60, "ft"],
+      components: ["V","S"],
+      duration: [0, "seconds"],
+      desc: "You create an acidic bubble at a point within range, where it \
+             explodes in a 5 ft. radius Sphere. Each creature in that Sphere \
+             must succeed on a DEX saving throw or take 1d6 of damage.",
+      cantrip_upgrade: "The damage increases by 1d6 when you reach levels 5 \
+                        (2d6), 11 (3d6) and 17 (4d6)."
+    },
+    sorcerer_chill_touch_0: {
+      name: "Chill Touch",
+      id: "sorcerer_chill_touch_0",
+      level: 0,
+      school: "necromancy",
+      concentration: false,
+      casting_time: "1 action",
+      range: "touch",
+      components: ["V","S"],
+      duration: [0, "seconds"],
+      desc: "Channeling the chill of the grave, make a melee spell attack \
+             against a target within reach. On a hit, the target takes 1d10 \
+             Necrotic damage, and it can't regain Hit Points until the end \
+             of your turn.",
+      cantrip_upgrade: "The damage increases by 1d10 when you reach levels \
+                        5 (2d10), 11 (3d10), and 17 (4d10)."
+    },
+    sorcerer_dancing_lights_0: {
       name: "Dancing Lights",
-      id: "bard_dancing_lights_0",
+      id: "sorcerer_dancing_lights_0",
       level: 0,
       school: "illusion",
       concentration: true,
@@ -32,9 +65,71 @@
             within 20 feet of another light created by this spell, \
             and a light vanishes if it exceeds the spell's range.",
     },
-    bard_light_0: {
+    sorcerer_elementalism_0: {
+      name: "Elementalism",
+      id: "sorcerer_elementalism_0",
+      level: 0,
+      school: "transmutation",
+      concentration: false,
+      casting_time: "1 action",
+      range: [30, "ft"],
+      components: ["V","S"],
+      desc: "You exert control over the elements, creating one of the following effects within range.",
+      effects: {
+        beckon_air: {
+          name: "Beckon Air",
+          desc: "You create a breeze strong enough to ripple cloth, stir dust, rustle leaves, and \
+                 close open doors and shutters, all in a 5 ft. Cube. Door and shutters being held \
+                 open by someone or something aren't affected."
+        },
+        beckon_earth: {
+          name: "Beckon Earth",
+          desc: "You create a thin shroud of dust or sand that covers surfaces in a 5 ft. square \
+                 area, or you cause a single word to appear in your handwriting in a patch of dirt \
+                 or sand."
+        },
+        beckon_fire: {
+          name: "Beckon Fire",
+          desc: "You create a thin cloud of harmless embers and colored, scented smoke in a 5 ft. \
+                 Cube. You choose the color and scent, and the embers can light candles, torches or \
+                 lamps in that area. The smoke's scent lingers for one minute.",
+          duration: [1, "minute"]
+        },
+        beckon_water: {
+          name: "Beckon Water",
+          desc: "You create a spray of cool mist that lightly dampens creatures and objects in a \
+                 5 ft. Cube. Alternatively, you create one cup of clean water either in an open \
+                 container or on a surface, and the water evaporates in 1 minute.",
+          duration: [1, "minute"],
+        },
+        sculpt_element: {
+          name: "Sculpt Element",
+          desc: "You cause dirt, sand, fire, smoke, mist or water that can fit in a 1 ft. Cube \
+                 to assume a crude shape (such as that of a creature) for 1 hour.",
+          duration: [1, "hour"],
+        }
+      }
+    },
+    sorcerer_fire_bolt_0:{
+      name: "Fire Bolt",
+      id: "sorcerer_fire_bolt_0",
+      level: 0,
+      school: "evocation",
+      concentration: false,
+      casting_time: "1 action",
+      range: [120, "ft"],
+      components: ["V","S"],
+      duration: [0, "seconds"],
+      desc: "You hurl a mote of fire at a creature or an object within range. \
+             Make a ranged spell attack against the target. On a hit, the target \
+             takes 1d10 Fire damage. A flammable object hit by this spell starts \
+             burning if it isn't being worn or carried.",
+      cantrip_upgrade: "The damage increases by 1d10 when you reach levels 5 (2d10), \
+                        11 (3d10) and 17 (4d10)."
+    },
+    sorcerer_light_0: {
       name: "Light",
-      id: "bard_light_0",
+      id: "sorcerer_light_0",
       level: 0,
       school: "evocation",
       concentration: false,
@@ -51,9 +146,9 @@
             Covering the object with something opaque \
             blocks the light. The spell ends if you cast it again.",
     },
-    bard_mage_hand_0: {
+    sorcerer_mage_hand_0: {
       name: "Mage Hand",
-      id: "bard_mage_hand_0",
+      id: "sorcerer_mage_hand_0",
       level: 0,
       school: "conjuration",
       concentration: false,
@@ -75,9 +170,9 @@
             The hand can't attack, activate magic items, or \
             carry more than 10 pounds.",
     },
-    bard_mending_0: {
+    sorcerer_mending_0: {
       name: "Mending",
-      id: "bard_mending_0",
+      id: "sorcerer_mending_0",
       level: 0,
       school: "transmutation",
       concentration: false,
@@ -95,9 +190,9 @@
             This spell can physically repair a magic item, but \
             it can't restore magic to such an object.",
     },
-    bard_message_0: {
+    sorcerer_message_0: {
       name: "Message",
-      id: "bard_message_0",
+      id: "sorcerer_message_0",
       level: 0,
       school: "transmutation",
       concentration: false,
@@ -115,9 +210,9 @@
             the barrier. Magical silence; 1 foot of stone, metal or \
             wood; or a thin sheet of lead blocks the spell.",
     },
-    bard_minor_illusion_0: {
+    sorcerer_minor_illusion_0: {
       name: "Minor Illusion",
-      id: "bard_minor_illusion_0",
+      id: "sorcerer_minor_illusion_0",
       level: 0,
       school: "illusion",
       concentration: false,
@@ -158,9 +253,25 @@
         },
       },
     },
-    bard_prestidigitation_0: {
+    sorcerer_poison_spray_0: {
+      name: "Poison Spray",
+      id: "sorcerer_poison_spray_0",
+      level: 0,
+      school: "necromancy",
+      concentration: false,
+      casting_time: "1 action",
+      range: [30, "ft"],
+      components: ["V","S"],
+      duration: [0, "seconds"],
+      desc: "You spray toxic mist at a creature within range. Make \
+             a ranged spell attack against the target. On a hit, the \
+             target takes 1d12 Poison damage.",
+      cantrip_upgrade: "The damage increases by 1d12 when you reach \
+                        levels 5 (2d12), 11 (3d12), and 17 (4d12)."
+    },
+    sorcerer_prestidigitation_0: {
       name: "Prestidigitation",
-      id: "bard_prestidigitation_0",
+      id: "sorcerer_prestidigitation_0",
       level: 0,
       school: "transmutation",
       concentration: false,
@@ -206,44 +317,53 @@
         },
       },
     },
-    bard_starry_wisp_0: {
-      name: "Starry Wisp",
-      id: "bard_starry_wisp_0",
+    sorcerer_ray_of_frost_0: {
+      name: "Ray of Frost",
+      id: "sorcerer_ray_of_frost_0",
       level: 0,
       school: "evocation",
       concentration: false,
       casting_time: "1 action",
       range: [60, "ft"],
       components: ["V","S"],
-      duration: [0, "seconds"],
-      desc: "You launch a mote of light at one creature or object \
-            within range. Make a ranged spell attack against \
-            the target. On a hit, the target takes 1d8 Radiant \
-            damage, and until the end of your next turn, it emits \
-            Dim Light in a 10 ft radius and can't benefit from \
-            the Invisible condition.",
-      cantrip_upgrade: "The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).",
+      desc: "A frigid beam of blue-white light streaks toward a creature within range. Make a ranged \
+             spell attack against the target. On a hit, it takes 1d8 Cold damage, and its Speed is \
+             reduced by 10 ft. until the start of your next turn.",
+      cantrip_upgrade: "The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8) and 17 (4d8)."
     },
-    bard_thunderclap_0: {
-      name: "Thunderclap",
-      id: "bard_thunderclap_0",
+    sorcerer_shocking_grasp_0: {
+      name: "Shocking Grasp",
+      id: "sorcerer_shocking_grasp_0",
       level: 0,
       school: "evocation",
       concentration: false,
       casting_time: "1 action",
-      range: "self",
-      components: ["S"],
+      range: "touch",
+      components: ["V","S"],
       duration: [0, "seconds"],
-      desc: "Each creature in a 5-foot Emanation originating \
-            from you must succeed on a CON saving throw or take \
-            1d6 Thunder damage. The spell's thunderous sound can \
-            be heard up to 100 ft away.",
-      cantrip_upgrade: "The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6) and 17 (4d6).",
+      desc: "Lightning springs from you to a creature that you try to touch. Make a melee spell attack \
+             against the target. On a hit, the target takes 1d8 Lightning damage, and it can't make \
+             Opportunity Attacks until the start of its next turn.",
+      cantrip_upgrade: "The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8) and 17 (4d8)."
     },
-    // man am I so glad to be almost done with the bard cantrips...
-    bard_true_strike_0: {
+    sorcerer_sorcerous_burst_0: {
+      name: "Sorcerous Burst",
+      id: "sorcerer_sorcerous_burst_0",
+      level: 0,
+      school: "evocation",
+      concentration: false,
+      casting_time: "1 action",
+      range: [120, "ft"],
+      components: ["V","S"],
+      duration: [0, "seconds"],
+      desc: "If you roll an 8 on a d8 for this spell, you can roll another d8, and add it to the damage. \
+             When you cast this spell, the maximum number of these d8s you can add to the spell's damage \
+             equals your Spellcasting Ability Modifier.",
+      cantrip_upgrade: "The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8) and 17 (4d8)."
+    },
+    sorcerer_true_strike_0: {
       name: "True Strike",
-      id: "bard_true_strike_0",
+      id: "sorcerer_true_strike_0",
       level: 0,
       school: "divination",
       concentration: false,
@@ -261,25 +381,5 @@
             (your choice).",
       cantrip_upgrade: "Whether you deal Radiant damage or the weapon's normal damage type, the attack deals extra Radiant damage when you reach levels 5 (1d6), 11 (2d6) and 17 (3d6).",
     },
-    // here it is. the final one.
-    bard_vicious_mockery_0: {
-      name: "Vicious Mockery",
-      id: "bard_vicious_mockery_0",
-      level: 0,
-      school: "enchantment",
-      concentration: false,
-      casting_time: "1 action",
-      range: [60, "ft"],
-      components: ["V"],
-      duration: [0, "seconds"],
-      desc: "You unleash a string of insults laced with subtle \
-            enchantments at one creature you can see or hear \
-            within range. The target must succeed on a WIS \
-            saving throw or take 1d6 Psychic damage and have \
-            Disadvantage on the next attack roll it makes before \
-            the end of its next turn.",
-      cantrip_upgrade: "The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6)."
-    }
   }
 }
-
