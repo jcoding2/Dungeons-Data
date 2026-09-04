@@ -40,3 +40,53 @@ mean Cantrips, the game's parser will recognize level 0 as a cantrip.
  - [ ] Level 7
  - [ ] Level 8
  - [ ] Level 9
+
+### Paladin
+ - [ ] Level 1
+ - [ ] Level 2
+ - [ ] Level 3
+ - [ ] Level 4
+ - [ ] Level 5
+
+### Ranger
+ - [ ] Level 1
+ - [ ] Level 2
+ - [ ] Level 3
+ - [ ] Level 4
+ - [ ] Level 5
+
+### Sorcerer
+ - [x] Cantrips
+ - [ ] Level 1
+ - [ ] Level 2
+ - [ ] Level 3
+ - [ ] Level 4
+ - [ ] Level 5
+ - [ ] Level 6
+ - [ ] Level 7
+ - [ ] Level 8
+ - [ ] Level 9
+
+### Warlock
+ - [x] Cantrips
+ - [ ] Level 1
+ - [ ] Level 2
+ - [ ] Level 3
+ - [ ] Level 4
+ - [ ] Level 5
+ - [ ] Level 6
+ - [ ] Level 7
+ - [ ] Level 8
+ - [ ] Level 9
+
+### Wizard
+ - [x] Cantrips
+ - [ ] Level 1
+ - [ ] Level 2
+ - [ ] Level 3
+ - [ ] Level 4
+ - [ ] Level 5
+ - [ ] Level 6
+ - [ ] Level 7
+ - [ ] Level 8
+ - [ ] Level 9

@@ -7,6 +7,54 @@ I'm writing spellsets in *alphabetical order*. That means that Warlock and Wizar
 
 ### How to format your own Spellsets
 
+An example:
+```json5
+{
+  name: "Sorcerer Cantrips (SRD)",
+  date_added: "September 3rd, 2026",
+  last_updated: "September 4th, 2026",
+  source: "System Reference Document v5.2.1",
+  author: "Dungeons & Data authors",
+
+  spells: {
+    sorcerer_acid_splash_0: {
+      name: "Acid Splash",
+      id: "sorcerer_acid_splash_0",
+      level: 0,
+      school: "evocation",
+      concentration: false,
+      casting_time: "1 action",
+      range: [60, "ft"],
+      components: ["V", "S"],
+      duration: [0, "seconds"],
+      desc: "Spell description.",
+
+      cantrip_upgrade: "Describe how the spell improves at higher levels."
+    }
+  }
+}
+```
+
+Spell fields:
+
+- `name`: Display name.
+- `id`: Unique spell identifier.
+- `level`: Spell level; use `0` for cantrips.
+- `school`: Magic school, such as `"evocation"`.
+- `concentration`: Whether concentration is required.
+- `casting_time`: A string or `[amount, unit]` pair.
+- `range`: A string or `[amount, unit]` pair.
+- `components`: Array containing `"V"`, `"S"`, and/or `"M"`.
+- `material_desc`: Material component description when `"M"` is included.
+- `duration`: A `[amount, unit]` pair when applicable.
+- `desc`: Spell description.
+- `cantrip_upgrade`: Optional cantrip scaling description.
+- `effects`: Optional object for spells with multiple selectable effects.
+
+Use JSON5 syntax, which permits unquoted property names, comments, trailing commas,
+and multiline strings.
+```
+
 ## To-do list
  - [ ] Spellset creator inside of the game
  - [ ] Actual, functional client
