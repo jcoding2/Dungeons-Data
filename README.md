@@ -53,7 +53,6 @@ Spell fields:
 
 Use JSON5 syntax, which permits unquoted property names, comments, trailing commas,
 and multiline strings.
-```
 
 ## To-do list
  - [ ] Spellset creator inside of the game

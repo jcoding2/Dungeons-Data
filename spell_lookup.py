@@ -1,3 +1,6 @@
+# this code is AI-generated but don't worry, I'll write a replacement script
+# when I can
+
 import argparse
 from pathlib import Path
 
