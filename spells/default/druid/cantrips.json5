@@ -89,6 +89,125 @@
           duration: [1, "hour"],
         }
       }
+    },
+    druid_guidance_0: {
+      name: "Guidance",
+      id: "druid_guidance_0",
+      level: 0,
+      school: "divination",
+      concentration: true,
+      casting_time: "1 action",
+      range: "touch",
+      components: ["V","S"],
+      duration: [1, "minute"],
+      desc: "You touch a willing creature and choose a skill. Un- \
+            til the spell ends, the creature adds 1d4 to any abil- \
+            ity check using the chosen skill."
+    },
+    druid_mending_0: {
+      name: "Mending",
+      id: "druid_mending_0",
+      level: 0,
+      school: "transmutation",
+      concentration: false,
+      casting_time: "1 minute",
+      range: "touch",
+      components: ["V","S","M"],
+      material_desc: "two lodestones",
+      duration: [0, "seconds"],
+      desc: "This spell repairs a single break or tear in an object \
+            you touch, such as a broken chain link, two halves \
+            of a broken key, a torn cloak, or a leaking wineskin. \
+            As long as the break or tear is no larger than 1 foot \
+            in any dimension, you mend it, leaving no trace of \
+            the former damage. \
+            This spell can physically repair a magic item, but \
+            it can't restore magic to such an object.",
+    },
+    druid_message_0: {
+      name: "Message",
+      id: "druid_message_0",
+      level: 0,
+      school: "transmutation",
+      concentration: false,
+      casting_time: "1 action",
+      range: [120, "ft"],
+      components: ["S","M"],
+      material_desc: "a copper wire",
+      duration: [1, "round"],
+      desc: "You point toward a creature within range and \
+            whisper a message. The target (and only the target) \
+            hears the message and can reply in a whisper that \
+            only you can hear. \
+            You can cast this spell through solid objects if you \
+            are familiar with the target and know it is beyond \
+            the barrier. Magical silence; 1 foot of stone, metal or \
+            wood; or a thin sheet of lead blocks the spell.",
+    },
+    druid_poison_spray_0: {
+      name: "Poison Spray",
+      id: "druid_poison_spray_0",
+      level: 0,
+      school: "necromancy",
+      concentration: false,
+      casting_time: "1 action",
+      range: [30, "ft"],
+      components: ["V","S"],
+      duration: [0, "seconds"],
+      desc: "You spray toxic mist at a creature within range. Make \
+             a ranged spell attack against the target. On a hit, the \
+             target takes 1d12 Poison damage.",
+      cantrip_upgrade: "The damage increases by 1d12 when you reach \
+                        levels 5 (2d12), 11 (3d12), and 17 (4d12)."
+    },
+    druid_produce_flame_0: {
+      name: "Produce Flame",
+      id: "druid_produce_flame_0",
+      level: 0,
+      school: "necromancy",
+      concentration: false,
+      casting_time: "1 bonus action",
+      range: "self",
+      components: ["V","S"],
+      duration: [10, "minutes"],
+      desc: "A flickering flame appears in your hand and remains \
+             there for the duration. While there, the flame emits \
+             no heat and ignites nothing, and it sheds Bright Light \
+             in a 20 ft. radius and Dim Light for an additional 20 ft. \
+             The spell ends if you cast it again. Until the spell ends, \
+             you can take a Magic action to hurl fire at a creature or an \
+             object within 60 ft. of you. Make a ranged spell attack. On \
+             a hit, the target takes 1d8 Fire damage.",
+      cantrip_upgrade: "The damage increases by 1d8 when you reach \
+                        levels 5 (2d8), 11 (3d8) and 17 (4d8)."
+    },
+    druid_resistance_0: {
+      name: "Resistance",
+      id: "druid_resistance_0",
+      level: 0,
+      school: "abjuration",
+      concentration: true,
+      casting_time: "1 action",
+      range: "touch",
+      components: ["V","S"],
+      duration: [1, "minute"],
+      desc: "You touch a willing creature and choose a damage \
+            type: Acid, Bludgeoning, Cold, Fire, Lightning, Ne- \
+            crotic, Piercing, Poison, Radiant, Slashing, or Thun- \
+            der. When the creature takes damage of the chosen \
+            type before the spell ends, the creature reduces the \
+            total damage taken by 1d4. A creature can benefit \
+            from this spell only once per turn.",
+    },
+    druid_shillelagh_0: {
+      name: "Shillelagh",
+      id: "druid_shillelagh_0",
+      level: 0,
+      school: "transmutation",
+      concentration: false,
+      casting_time: "1 bonus action",
+      range: "self",
+      
     }
   }
 }

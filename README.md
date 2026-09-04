@@ -6,3 +6,9 @@ Dungeons and Data is a D&D 5th edition-compatible client (kinda like D&D Beyond)
 I'm writing spellsets in *alphabetical order*. That means that Warlock and Wizard are last, and Bard and Cleric are first. The current spellset I'm doing is the Druid cantrips.
 
 ### How to format your own Spellsets
+
+## To-do list
+ - [ ] Spellset creator inside of the game
+ - [ ] Actual, functional client
+ - [ ] Spellset viewer
+ - [ ] Complete "weaponsets" and "monstersets"
