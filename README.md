@@ -59,3 +59,5 @@ and multiline strings.
  - [ ] Actual, functional client
  - [ ] Spellset viewer
  - [ ] Complete "weaponsets" and "monstersets"
+ - [ ] GUI version
+ - [ ] 3e/3.5e + 5e support (more JSON5, yippee)

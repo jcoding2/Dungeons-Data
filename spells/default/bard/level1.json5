@@ -5,7 +5,7 @@
 {
   name: "Bard Level 1 Spells (SRD)",
   date_added: "September 4, 2026",
-  last_updated: "September 4, 2026",
+  last_updated: "September 5, 2026",
   source: "System Reference Document v5.2.1",
   author: "Dungeons & Data authors",
   spells: {
@@ -147,8 +147,8 @@
       components: ["V","S"],
       duration: [1, "hour"],
       desc: "You make yourself--including your clothing, armor, weapons and other belongings on your person--look different until the spell ends. You can seem 1 foot shorter or taller and can appear heavier or lighter. You must adopt a form that has the same basic arrangement of limbs as you have. Otherwise, the extent of the illusion is up to you. \
-             The changes wrought by this spell fail to hold up to physical inspection. For example, if you use this spell to add a hat to your outfit, objects pass through the hat, and anyone who touches would feel nothing. \
-             To discern that you are disguised, a creature must take the Study action to inspect your appearance and succeed on an INT (Investigation) check against your spell save DC."
+    The changes wrought by this spell fail to hold up to physical inspection. For example, if you use this spell to add a hat to your outfit, objects pass through the hat, and anyone who touches would feel nothing. \
+To discern that you are disguised, a creature must take the Study action to inspect your appearance and succeed on an INT (Investigation) check against your spell save DC."
     },
     bard_dissonant_whispers_1: {
       name: "Dissonant Whispers",
@@ -163,6 +163,186 @@
       desc: "One creature of your choice that you can see within range hears a discordant melody in its mind. The target makes a WIS saving throw. On a failed save, it takes 3d6 Psychic damage and must immediately use its Reaction, if available, to move as far away from you as it can, using the safest route. On a successful save, the target takes half damage only.",
       higher_levels:  "The damage increases by 1d6 for each spell slot level above 1."
     },
-    
+    bard_faerie_fire_1: {
+      name: "Faerie Fire",
+      id: "bard_faerie_fire_1",
+      level: 1,
+      school: "evocation",
+      concentration: true,
+      casting_time: "1 action",
+      range: [60, "ft"],
+      components: ["V"],
+      duration: [1, "minute"],
+      desc: "Objects in a 20 ft. Cube within range are outlined in blue, green, or violet light (your choice). Each creature in the Cube is also outlined if it fails a DEX saving throw. For the duration, objects and affected creatures shed Dim Light in a 10 ft. radius and can't benefit from the Invisible condition. \
+Attack rolls against an affected creature or object have Advantage if the attacker can see it."
+    },
+    bard_feather_fall_1: {
+      name: "Feather Fall",
+      id: "bard_feather_fall_1",
+      level: 1,
+      school: "transmutation",
+      concentration: false,
+      casting_time: "1 reaction, if you or a creature within 60 ft. of you (that you can see) falls",
+      range: [60, "ft"],
+      components: ["V","M"],
+      material_desc: "a small feather or piece of down",
+      duration: [1, "minute"],
+      desc: "Choose up to 5 falling creatures within range. A falling creature's rate of descent slows to 60 ft. per round until the spell ends. If a creature lands before the spell ends, the creature takes no damage from the fall, and the spell ends for that creature."
+    },
+    bard_healing_word_1: {
+      name: "Healing Word",
+      id: "bard_healing_word_1",
+      level: 1,
+      school: "abjuration",
+      concentration: false,
+      casting_time: "1 bonus action",
+      range: [60, "ft"],
+      components: ["V"],
+      duration: [0, "seconds"],
+      desc: "A creature of your choice that you can see within range regains Hit Points equal to 2d4 plus your spellcasting ability modifier.",
+      higher_levels: "The healing increases by 2d4 for each spell slot level above 1."
+    },
+    bard_heroism_1: {
+      name: "Heroism",
+      id: "bard_heroism_1",
+      level: 1,
+      school: "enchantment",
+      concentration: true,
+      casting_time: "1 action",
+      range: "touch",
+      components: ["V","S"],
+      duration: [1, "minute"],
+      desc: "A willing creature you touch is imbued with bravery. Until the spell ends, the creature is immune to the Frightened condition and gains Temporary Hit Points equal to your spellcasting ability modifier at the start of each of its turns.",
+      higher_levels: "You can target one additional creature for each spell slot level above 1."
+    },
+    bard_hideous_laughter_1: {
+      name: "Hideous Laughter",
+      id: "bard_hideous_laughter_1",
+      level: 1,
+      school: "enchantment",
+      concentration: true,
+      casting_time: "1 action",
+      range: [30, "ft"],
+      components: ["V","S","M"],
+      material_desc: "a tart and a feather",
+      duration: [1, "minute"],
+      desc: "One creature of your choice that you can see within range makes a WIS saving throw. On a failed save, it has the Prone and Incapacitated conditions for the duration. During that time, it laughs uncontrollably if it's capable of laughter, and it can't end the Prone condition on itself. \
+At the end of each of its turns and each time it takes damage, it makes another WIS saving throw. The target has Advantage on the save if the save is triggered by damage. On a successful save, the spell ends.",
+      higher_levels:"You can target one additional creature for each spell slot level above 1.",
+    },
+    bard_identify_1: {
+      name: "Identify",
+      id: "bard_identify_1",
+      level: 1,
+      school: "divination",
+      concentration: false,
+      casting_time: "1 minute or Ritual",
+      range: "touch",
+      components: ["V","S","M"],
+      material_desc: "a pearl worth 100+ GP",
+      duration: [0, "seconds"],
+      desc: "You touch an object throughout the spell's casting. If the object is a magic item or some other magical object, you learn its properties and how to use them, whether it requires Attunement, and how many charges it has, if any. You learn whether any ongoing spells are affecting the item and what they are. If the item was created by a spell, you learn the spell's name. \
+If you instead touch a creature throughout the casting, you learn which ongoing spells, if any, are currently affecting it.",
+    },
+    bard_illusory_script_1: {
+      name: "Illusory Script",
+      id: "bard_illusory_script_1",
+      level: 1,
+      school: "illusion",
+      concentration: false,
+      casting_time: "1 minute or Ritual",
+      range: "touch",
+      components: ["S","M"],
+      material_desc: "ink worth 10+ GP, which the spell consumes",
+      duration: [10, "days"],
+      desc: "You write on parchment, paper, or another suitable material and imbue it with an illusion that lasts for the duration. To you and any creatures you designate when you cast the spell, the writing appears normal, seems to be written in your hand, and conveys whatever meaning you indented when you wrote the text. To all others, the writing appears as if it were written in an unknown or magical script that is unintelligible. Alternatively, the illusion can alter the meaning, handwriting, and language of the text, though the language must be one you know. \
+If the spell is dispelled, the original script and the illusion both disappear. \
+A creature that has Truesight can read the hidden message."
+    },
+    bard_longstrider_1: {
+      name: "Longstrider",
+      id: "bard_longstrider_1",
+      level: 1,
+      school: "transmutation",
+      concentration: false,
+      casting_time: "1 action",
+      range: "touch",
+      components: ["V","S","M"],
+      material_desc: "a pinch of dirt",
+      duration: [1, "hour"],
+      desc: "You touch a creature. The target's Speel increases by 10 ft. until the spell ends.",
+      higher_levels: "You can target one additional creature for each spell slot level above 1."
+    },
+    bard_silent_image_1: {
+      name: "Silent Image",
+      id: "bard_silent_image_1",
+      level: 1,
+      school: "illusion",
+      concentration: true,
+      casting_time: "1 action",
+      range: [60, "ft"],
+      components: ["V","S","M"],
+      material_desc: "a bit of fleece",
+      duration: [10, "minute"],
+      desc: "You create the image of an object, a creature, or some other visible phenomenon that is no larger than a 15 ft. Cube. The image appears at a spot within range and lasts for the duration. The image is purely visual; it isn't accompanied by sound, smell, or other sensory effects. \
+As a Magic action, you can cause the image to move to any spot within range. As the image changes location, you can alter its appearance to that its movements appear natural for the image. For example, if you create an image of a creature and move it, you can alter the image so that it appears to be walking. \
+Physical interaction with the image reveals it to be an illusion, since things can pass through it. A creature that takes the Study action to examine the image can determine that it is an illusion with a successful INT (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the image."
+    },
+    bard_sleep_1: {
+      name: "Sleep",
+      id: "bard_sleep_1",
+      level: 1,
+      school: "enchantment",
+      concentration: true,
+      casting_time: "1 action",
+      range: [60, "ft"],
+      components: ["V","S","M"],
+      material_desc: "a pinch of sand or rose petals",
+      duration: [1, "minute"],
+      desc: "Each creature of your choice in a 5 ft. radius Sphere centered on a point within range must succeed on a WIS saving throw or have the Incapacitaed condition until the end of its next turn, at which point it must repeat the save. If the target fails the second save, the target has the Unconscious condition for the duration. The spell ends on a target if it takes damage or someone within 5 ft. of it takes an action to shake it out of the spell's effect. \
+Creatures that don't sleep, such as elves, or that have immunity to the Exhaustion condition automatically succed on saves against this spell."
+    },
+    bard_speak_with_animals_1: {
+      name: "Speak with Animals",
+      id: "bard_speak_with_animals_1",
+      level: 1,
+      school: "divination",
+      concentration: false,
+      casting_time: "1 action, or 1 ritual",
+      range: "self",
+      components: ["V","S"],
+      duration: [10, "minute"],
+      desc: "For the duration, you can comprehend and verbally communicate with Beasts, and you can use any of the Influence action's skill options with them. \
+Most Beasts have little to say about topics that don't pertain to survival or companionship, but at minimum, a Beast can give you information about nearby locations and monsters, including whatever it has percieved within the past day."
+    },
+    bard_thunderwave_1: {
+      name: "Thunderwave",
+      id: "bard_thunderwave_1",
+      level: 1,
+      school: "evocation",
+      concentration: false,
+      casting_time: "1 action",
+      range: "self",
+      components: ["V","S"],
+      duration: [0, "seconds"],
+      desc: "You unleash a wave of thunderous energy. Each creature in a 15 ft. Cube originating from you makes a CON saving throw. On a failed save, a creature takes 2d8 Thunder damage and is pushed 10 ft. away from you. On a successful save, a creature takes half as much damage only. \
+In addition, unsecured objects that are entirely within the Cube are pushed 10 ft. away from you, and a thunderous boom is audible within 300 ft.",
+      higher_levels: "The damage increases by 1d8 for each spell slot level above 1."
+    },
+    bard_unseen_servant_1: {
+      name: "Unseen Servant",
+      id: "bard_unseen_servant_1",
+      level: 1,
+      school: "conjuration",
+      concentration: false,
+      casting_time: "1 action, or 1 ritual",
+      range: [60, "ft"],
+      components: ["V","S","M"],
+      material_desc: "a bit of string and of wood",
+      duration: [1, "hour"],
+      desc: "This spell creates an Invisible, mindless, shapeless, Medium force that performs simple tasks at your command until the spell ends. The servant springs into existence in an unoccupied space on the ground within range. It has AC 10, 1 HP, and 2 STR, and cannot attack. If its health reaches 0 HP, the spell ends. \
+Once on each of your turns as a Bonus Action, you can mentally command the servant to move up to 15 ft. and interact with an object. The servant can perform simple tasks that a human could do, such as fetching things, cleaning, mending, folding clothes, lighting fires, serving food, and pouring drinks. Once you give the command, the servant performs the task to the best of its ability until it completes the task, then waits for your next command. \
+If you command the servant to perform a task that would move it more than 60 ft. away from you, the spell ends."
+    }
   }
 }
