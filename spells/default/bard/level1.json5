@@ -163,6 +163,36 @@
       desc: "One creature of your choice that you can see within range hears a discordant melody in its mind. The target makes a WIS saving throw. On a failed save, it takes 3d6 Psychic damage and must immediately use its Reaction, if available, to move as far away from you as it can, using the safest route. On a successful save, the target takes half damage only.",
       higher_levels:  "The damage increases by 1d6 for each spell slot level above 1."
     },
-    
+    bard_faerie_fire_1: {
+      name: "Faerie Fire",
+      id: "bard_faerie_fire_1",
+      level: 1,
+      school: "evocation",
+      concentration: true,
+      casting_time: "1 action",
+      range: [60, "ft"],
+      components: ["V"],
+      duration: [1, "minute"],
+      desc: "Objects in a 20 ft. Cube within range are outlined in blue, green, or violet light (your choice). Each creature in the Cube is also outlined if it fails a DEX saving throw. For the duration, objects and affected creatures shed Dim Light in a 10 ft. radius and can't benefit from the Invisible condition. \
+             Attack rolls against an affected creature or object have Advantage if the attacker can see it."
+    },
+    bard_feather_fall_1: {
+      name: "Feather Fall",
+      id: "bard_feather_fall_1",
+      level: 1,
+      school: "evocation",
+      concentration: false,
+      casting_time: "1 reaction, if a creature within 60 ft. of you falls",
+      range: [60, "ft"],
+      components: ["V","M"],
+      material_desc: "a small feather or piece of down",
+      duration: [1, "minute"],
+      desc: "Choose up to five falling creatures within range. A falling creature's rate of descent slows to 60 ft. per round until the spell ends. If a creature lands before the spell ends, the creature takes no damage from the fall, and the spell ends for that creature."
+    },
+    bard_healing_word: {
+      name: "Healing Word",
+      id: "bard_healing_word_1",
+      
+    }
   }
 }
