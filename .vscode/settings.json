@@ -5,7 +5,7 @@
     "[c]": {
         "editor.indentSize": 8
     },
-    "[JSON5]": {
+    "[json5]": {
         "editor.indentSize": 2
     }
 }
