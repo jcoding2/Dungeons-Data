@@ -147,7 +147,7 @@
       components: ["V","S"],
       duration: [1, "hour"],
       desc: "You make yourself--including your clothing, armor, weapons and other belongings on your person--look different until the spell ends. You can seem 1 foot shorter or taller and can appear heavier or lighter. You must adopt a form that has the same basic arrangement of limbs as you have. Otherwise, the extent of the illusion is up to you. \
-    The changes wrought by this spell fail to hold up to physical inspection. For example, if you use this spell to add a hat to your outfit, objects pass through the hat, and anyone who touches would feel nothing. \
+The changes wrought by this spell fail to hold up to physical inspection. For example, if you use this spell to add a hat to your outfit, objects pass through the hat, and anyone who touches would feel nothing. \
 To discern that you are disguised, a creature must take the Study action to inspect your appearance and succeed on an INT (Investigation) check against your spell save DC."
     },
     bard_dissonant_whispers_1: {
@@ -228,7 +228,7 @@ Attack rolls against an affected creature or object have Advantage if the attack
       duration: [1, "minute"],
       desc: "One creature of your choice that you can see within range makes a WIS saving throw. On a failed save, it has the Prone and Incapacitated conditions for the duration. During that time, it laughs uncontrollably if it's capable of laughter, and it can't end the Prone condition on itself. \
 At the end of each of its turns and each time it takes damage, it makes another WIS saving throw. The target has Advantage on the save if the save is triggered by damage. On a successful save, the spell ends.",
-      higher_levels:"You can target one additional creature for each spell slot level above 1.",
+      higher_levels: "You can target one additional creature for each spell slot level above 1.",
     },
     bard_identify_1: {
       name: "Identify",
