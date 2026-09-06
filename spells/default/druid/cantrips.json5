@@ -23,10 +23,10 @@
       effects: {
         weather_sensor: {
           name: "Weather Sensor",
-          desc: "You create a Tiny, harmless sensory effect that predicts what the weather will be \
-                 at your location for the next 24 hours. The effect might manifest as a golden orb \
-                 for clear skies, a cloud for rain, falling snowflakes for snow, and so on. This   \
-                 effect persists for 1 round.",
+            desc: "You create a Tiny, harmless sensory effect that predicts what the weather will be \
+        at your location for the next 24 hours. The effect might manifest as a golden orb \
+        for clear skies, a cloud for rain, falling snowflakes for snow, and so on. This   \
+        effect persists for 1 round.",
           duration: [1, "round"],
         },
         bloom: {
@@ -36,8 +36,8 @@
         sensory_effect: {
           name: "Sensory Effect",
           desc: "You create a harmless sensory effect, such as falling leaves, spectral dancing \
-                 fairies, a gentle breeze, the sound of an animal, or the faint odor of a skunk. \
-                 The effect must fit in a 5 ft. Cube."
+fairies, a gentle breeze, the sound of an animal, or the faint odor of a skunk. \
+The effect must fit in a 5 ft. Cube."
         },
         fire_play: {
           name: "Fire Play",
@@ -59,33 +59,33 @@
         beckon_air: {
           name: "Beckon Air",
           desc: "You create a breeze strong enough to ripple cloth, stir dust, rustle leaves, and \
-                 close open doors and shutters, all in a 5 ft. Cube. Door and shutters being held \
-                 open by someone or something aren't affected."
+close open doors and shutters, all in a 5 ft. Cube. Door and shutters being held \
+open by someone or something aren't affected."
         },
         beckon_earth: {
           name: "Beckon Earth",
           desc: "You create a thin shroud of dust or sand that covers surfaces in a 5 ft. square \
-                 area, or you cause a single word to appear in your handwriting in a patch of dirt \
-                 or sand."
+area, or you cause a single word to appear in your handwriting in a patch of dirt \
+or sand."
         },
         beckon_fire: {
           name: "Beckon Fire",
           desc: "You create a thin cloud of harmless embers and colored, scented smoke in a 5 ft. \
-                 Cube. You choose the color and scent, and the embers can light candles, torches or \
-                 lamps in that area. The smoke's scent lingers for one minute.",
+Cube. You choose the color and scent, and the embers can light candles, torches or \
+lamps in that area. The smoke's scent lingers for one minute.",
           duration: [1, "minute"]
         },
         beckon_water: {
           name: "Beckon Water",
           desc: "You create a spray of cool mist that lightly dampens creatures and objects in a \
-                 5 ft. Cube. Alternatively, you create one cup of clean water either in an open \
-                 container or on a surface, and the water evaporates in 1 minute.",
+5 ft. Cube. Alternatively, you create one cup of clean water either in an open \
+container or on a surface, and the water evaporates in 1 minute.",
           duration: [1, "minute"],
         },
         sculpt_element: {
           name: "Sculpt Element",
           desc: "You cause dirt, sand, fire, smoke, mist or water that can fit in a 1 ft. Cube \
-                 to assume a crude shape (such as that of a creature) for 1 hour.",
+to assume a crude shape (such as that of a creature) for 1 hour.",
           duration: [1, "hour"],
         }
       }
@@ -101,8 +101,8 @@
       components: ["V","S"],
       duration: [1, "minute"],
       desc: "You touch a willing creature and choose a skill. Un- \
-            til the spell ends, the creature adds 1d4 to any abil- \
-            ity check using the chosen skill."
+til the spell ends, the creature adds 1d4 to any abil- \
+ity check using the chosen skill."
     },
     druid_mending_0: {
       name: "Mending",
@@ -116,13 +116,13 @@
       material_desc: "two lodestones",
       duration: [0, "seconds"],
       desc: "This spell repairs a single break or tear in an object \
-            you touch, such as a broken chain link, two halves \
-            of a broken key, a torn cloak, or a leaking wineskin. \
-            As long as the break or tear is no larger than 1 foot \
-            in any dimension, you mend it, leaving no trace of \
-            the former damage. \
-            This spell can physically repair a magic item, but \
-            it can't restore magic to such an object.",
+you touch, such as a broken chain link, two halves \
+of a broken key, a torn cloak, or a leaking wineskin. \
+As long as the break or tear is no larger than 1 foot \
+in any dimension, you mend it, leaving no trace of \
+the former damage. \
+This spell can physically repair a magic item, but \
+it can't restore magic to such an object.",
     },
     druid_message_0: {
       name: "Message",
@@ -136,13 +136,13 @@
       material_desc: "a copper wire",
       duration: [1, "round"],
       desc: "You point toward a creature within range and \
-            whisper a message. The target (and only the target) \
-            hears the message and can reply in a whisper that \
-            only you can hear. \
-            You can cast this spell through solid objects if you \
-            are familiar with the target and know it is beyond \
-            the barrier. Magical silence; 1 foot of stone, metal or \
-            wood; or a thin sheet of lead blocks the spell.",
+whisper a message. The target (and only the target) \
+hears the message and can reply in a whisper that \
+only you can hear. \
+You can cast this spell through solid objects if you \
+are familiar with the target and know it is beyond \
+the barrier. Magical silence; 1 foot of stone, metal or \
+wood; or a thin sheet of lead blocks the spell.",
     },
     druid_poison_spray_0: {
       name: "Poison Spray",
@@ -155,10 +155,10 @@
       components: ["V","S"],
       duration: [0, "seconds"],
       desc: "You spray toxic mist at a creature within range. Make \
-             a ranged spell attack against the target. On a hit, the \
-             target takes 1d12 Poison damage.",
-      cantrip_upgrade: "The damage increases by 1d12 when you reach \
-                        levels 5 (2d12), 11 (3d12), and 17 (4d12)."
+         a ranged spell attack against the target. On a hit, the \
+        target takes 1d12 Poison damage.",
+          cantrip_upgrade: "The damage increases by 1d12 when you reach \
+        levels 5 (2d12), 11 (3d12), and 17 (4d12)."
     },
     druid_produce_flame_0: {
       name: "Produce Flame",
@@ -171,15 +171,15 @@
       components: ["V","S"],
       duration: [10, "minutes"],
       desc: "A flickering flame appears in your hand and remains \
-             there for the duration. While there, the flame emits \
-             no heat and ignites nothing, and it sheds Bright Light \
-             in a 20 ft. radius and Dim Light for an additional 20 ft. \
-             The spell ends if you cast it again. Until the spell ends, \
-             you can take a Magic action to hurl fire at a creature or an \
-             object within 60 ft. of you. Make a ranged spell attack. On \
-             a hit, the target takes 1d8 Fire damage.",
-      cantrip_upgrade: "The damage increases by 1d8 when you reach \
-                        levels 5 (2d8), 11 (3d8) and 17 (4d8)."
+        there for the duration. While there, the flame emits \
+        no heat and ignites nothing, and it sheds Bright Light \
+        in a 20 ft. radius and Dim Light for an additional 20 ft. \
+        The spell ends if you cast it again. Until the spell ends, \
+        you can take a Magic action to hurl fire at a creature or an \
+        object within 60 ft. of you. Make a ranged spell attack. On \
+        a hit, the target takes 1d8 Fire damage.",
+          cantrip_upgrade: "The damage increases by 1d8 when you reach \
+        levels 5 (2d8), 11 (3d8) and 17 (4d8)."
     },
     druid_resistance_0: {
       name: "Resistance",
@@ -192,12 +192,12 @@
       components: ["V","S"],
       duration: [1, "minute"],
       desc: "You touch a willing creature and choose a damage \
-            type: Acid, Bludgeoning, Cold, Fire, Lightning, Ne- \
-            crotic, Piercing, Poison, Radiant, Slashing, or Thun- \
-            der. When the creature takes damage of the chosen \
-            type before the spell ends, the creature reduces the \
-            total damage taken by 1d4. A creature can benefit \
-            from this spell only once per turn.",
+type: Acid, Bludgeoning, Cold, Fire, Lightning, Ne- \
+crotic, Piercing, Poison, Radiant, Slashing, or Thun- \
+der. When the creature takes damage of the chosen \
+type before the spell ends, the creature reduces the \
+total damage taken by 1d4. A creature can benefit \
+from this spell only once per turn.",
     },
     druid_shillelagh_0: {
       name: "Shillelagh",
@@ -224,7 +224,7 @@
       components: ["V","S"],
       duration: [0, "seconds"],
       desc: "Choose a creature within range that has 0 HP \
-            and isn't dead. The creature becomes Stable.",
+and isn't dead. The creature becomes Stable.",
       cantrip_upgrade: "The range doubles when you reach levels 5 (30 ft), 11 (60 ft), and 17 (120 ft).",
     },
  		druid_starry_wisp_0: {
@@ -238,11 +238,11 @@
       components: ["V","S"],
       duration: [0, "seconds"],
       desc: "You launch a mote of light at one creature or object \
-            within range. Make a ranged spell attack against \
-            the target. On a hit, the target takes 1d8 Radiant \
-            damage, and until the end of your next turn, it emits \
-            Dim Light in a 10 ft radius and can't benefit from \
-            the Invisible condition.",
+within range. Make a ranged spell attack against \
+the target. On a hit, the target takes 1d8 Radiant \
+damage, and until the end of your next turn, it emits \
+Dim Light in a 10 ft radius and can't benefit from \
+the Invisible condition.",
       cantrip_upgrade: "The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).",
     },
   }

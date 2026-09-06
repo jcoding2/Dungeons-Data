@@ -1,0 +1,17 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Normalize continued spell strings",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-NoProfile",
+				"-Command",
+				"$files = Get-ChildItem -Path 'spells\\default' -Recurse -Filter '*.json5'; foreach ($file in $files) { $lines = [System.IO.File]::ReadAllLines($file.FullName); $previousContinued = $false; $updated = foreach ($line in $lines) { if ($previousContinued) { $line = $line -replace '^\\s+', '' }; $previousContinued = $line.TrimEnd().EndsWith('\\'); $line }; [System.IO.File]::WriteAllLines($file.FullName, $updated, [System.Text.UTF8Encoding]::new($false)) }"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		}
+	]
+}

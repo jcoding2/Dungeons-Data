@@ -19,11 +19,11 @@
       components: ["V","S"],
       duration: [0, "seconds"],
       desc: "Channeling the chill of the grave, make a melee spell attack \
-             against a target within reach. On a hit, the target takes 1d10 \
-             Necrotic damage, and it can't regain Hit Points until the end \
-             of your turn.",
+against a target within reach. On a hit, the target takes 1d10 \
+Necrotic damage, and it can't regain Hit Points until the end \
+of your turn.",
       cantrip_upgrade: "The damage increases by 1d10 when you reach levels \
-                        5 (2d10), 11 (3d10), and 17 (4d10)."
+5 (2d10), 11 (3d10), and 17 (4d10)."
     },
     warlock_eldritch_blast_0: {
       name: "Eldritch Blast",
@@ -36,12 +36,12 @@
       components: ["V","S"],
       duration: [0, "seconds"],
       desc: "You hurl a beam of crackling energy. Make a ranged spell attack \
-             against one creature or object in range. On a hit, the target takes \
-             1d10 Force damage.",
+against one creature or object in range. On a hit, the target takes \
+1d10 Force damage.",
       cantrip_upgrade: "The spell creates two beams at level 5, three beams at \
-                        level 11, and four beams at level 17. You can direct the \
-                        beams at the same target or at different ones. Make a sep-\
-                        arate attack roll for each beam."
+level 11, and four beams at level 17. You can direct the \
+beams at the same target or at different ones. Make a sep-\
+arate attack roll for each beam."
     },
     warlock_mage_hand_0: {
       name: "Mage Hand",
@@ -54,18 +54,18 @@
       components: ["V","S"],
       duration: [1, "minute"],
       desc: "A spectral, floating hand appears at a point you \
-             choose within range. The hand lasts for the dura- \
-             tion. The hand vanishes if it is ever more than 30 \
-             feet away from you or if you cast this spell again. \
-             When you cast the spell, you can use the hand \
-             to manipulate an object, open an unlocked door or \
-             container, stow or retrieve an item from an open \
-             container, or pour the contents out of a vial. \
-             As a Magic action on your later turns, you can \
-             control the hand thus again. As part of that action, \
-             you can move the hand up to 30 feet. \
-             The hand can't attack, activate magic items, or \
-             carry more than 10 pounds.",
+choose within range. The hand lasts for the dura- \
+tion. The hand vanishes if it is ever more than 30 \
+feet away from you or if you cast this spell again. \
+When you cast the spell, you can use the hand \
+to manipulate an object, open an unlocked door or \
+container, stow or retrieve an item from an open \
+container, or pour the contents out of a vial. \
+As a Magic action on your later turns, you can \
+control the hand thus again. As part of that action, \
+you can move the hand up to 30 feet. \
+The hand can't attack, activate magic items, or \
+carry more than 10 pounds.",
     },
     sorcerer_minor_illusion_0: {
       name: "Minor Illusion",
@@ -79,34 +79,34 @@
       material_desc: "a bit of fleece",
       duration: [1, "minute"],
       desc: "You create a sound or an image of an object within \
-            range that lasts for the duration. See the descrip- \
-            tions below for the effects of each. The illusion ends \
-            if you cast this spell again.\
-            If a creature takes a Study action to examine the \
-            sound or image, the creature can determine that it \
-            is an illusion with a successful INT (Investigation) \
-            check against your spell save DC. If a creature disc- \
-            erns the illusion for what it is, the illusion becomes \
-            faint to the creature.",
+range that lasts for the duration. See the descrip- \
+ tions below for the effects of each. The illusion ends \
+if you cast this spell again.\
+If a creature takes a Study action to examine the \
+sound or image, the creature can determine that it \
+is an illusion with a successful INT (Investigation) \
+check against your spell save DC. If a creature disc- \
+erns the illusion for what it is, the illusion becomes \
+faint to the creature.",
       effects: {
         sound: {
           name: "Sound",
           desc: "If you create a sound, its volume can \
-                range from a whisper to a scream. It can be your \
-                voice, someone else's voice, a lion's roar, a beating of \
-                drums, or any other sound you choose. The sound \
-                continues unabated throughout the duration, or you \
-                can make discrete sounds at different times before \
-                the spell ends.",
+range from a whisper to a scream. It can be your \
+voice, someone else's voice, a lion's roar, a beating of \
+drums, or any other sound you choose. The sound \
+continues unabated throughout the duration, or you \
+can make discrete sounds at different times before \
+the spell ends.",
         },
         image: {
           name: "Image",
           desc: "If you create an image of an object--such \
-                as a chair, muddy footprints, or a small chest--it \
-                must be no larger than a 5 ft Cube. The image \
-                can't create sound, light, smell, or any other sensory \
-                effect. Physical interation with the image reveals it \
-                to be an illusion, since things can pass through it.",
+as a chair, muddy footprints, or a small chest--it \
+must be no larger than a 5 ft Cube. The image \
+can't create sound, light, smell, or any other sensory \
+effect. Physical interation with the image reveals it \
+to be an illusion, since things can pass through it.",
         },
       },
     },
@@ -121,10 +121,10 @@
       components: ["V","S"],
       duration: [0, "seconds"],
       desc: "You spray toxic mist at a creature within range. Make \
-             a ranged spell attack against the target. On a hit, the \
-             target takes 1d12 Poison damage.",
-      cantrip_upgrade: "The damage increases by 1d12 when you reach \
-                        levels 5 (2d12), 11 (3d12), and 17 (4d12)."
+         a ranged spell attack against the target. On a hit, the \
+        target takes 1d12 Poison damage.",
+          cantrip_upgrade: "The damage increases by 1d12 when you reach \
+        levels 5 (2d12), 11 (3d12), and 17 (4d12)."
     },
     warlock_prestidigitation_0: {
       name: "Prestidigitation",
@@ -136,9 +136,9 @@
       range: [10, "ft"],
       components: ["V","S"],
       desc: "You create a magical effect within range. Choose \
-            the effect from the options below. If you cast this \
-            spell multiple times, you can have up to three of its \
-            non-instantaneous effects active at a time.",
+the effect from the options below. If you cast this \
+spell multiple times, you can have up to three of its \
+non-instantaneous effects active at a time.",
       effects: {
         sensory_effect: {
           name: "Sensory Effect",
@@ -169,7 +169,7 @@
         minor_creation: {
           name: "Minor Creation",
           desc: "You create a nonmagical trinket or an illusory image that can fit in your hand. It \
-                lasts until the end of your next turn. A trinket can deal no damage and has no monetary worth.",
+lasts until the end of your next turn. A trinket can deal no damage and has no monetary worth.",
           duration: [0, "seconds"],
         },
       },
@@ -186,12 +186,12 @@
       material_desc: "a weapon with which you have proficiency and that is worth 1+ copper pieces",
       duration: [0, "seconds"],
       desc: "Guided by a flash of magical insight, you make one \
-            attack with the weapon used in the spell's casting. \
-            The attack uses your spellcasting ability for the at- \
-            tack and damage rolls instead of using STR or \
-            DEX. If the attack deals damage, it can be Ra- \
-            diant damage or the weapon's normal damage type \
-            (your choice).",
+attack with the weapon used in the spell's casting. \
+The attack uses your spellcasting ability for the at- \
+tack and damage rolls instead of using STR or \
+DEX. If the attack deals damage, it can be Ra- \
+diant damage or the weapon's normal damage type \
+(your choice).",
       cantrip_upgrade: "Whether you deal Radiant damage or the weapon's normal damage type, the attack deals extra Radiant damage when you reach levels 5 (1d6), 11 (2d6) and 17 (3d6).",
     },
   }

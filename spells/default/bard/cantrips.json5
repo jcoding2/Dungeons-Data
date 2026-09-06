@@ -20,17 +20,7 @@
       components: ["V","S","M"],
       material_desc: "a bit of phosphorus",
       duration: [1, "minute"],
-      desc: "You create up to four torch-size lights within range, \
-            making them appear as torches, lanterns or glow- \
-            ing orbs that hover for the duration. Alternatively, \
-            you combine the four lights into one flowing Me- \
-            dium form that is vaguely humanlike. Whichever \
-            form you choose, each light sheds Dim Light in a \
-            10-foot radius. \
-            As a Bonus Action, you can move the lights up \
-            to 60 feet to a space within range. A light must be \
-            within 20 feet of another light created by this spell, \
-            and a light vanishes if it exceeds the spell's range.",
+      desc: "You create up to four torch-size lights within range, making them appear as torches, lanterns or glowing orbs that hover for the duration. Alternatively, you combine the four lights into one flowing Medium form that is vaguely humanlike. Whichever form you choose, each light sheds Dim Light in a 10-foot radius. As a Bonus Action, you can move the lights up to 60 feet to a space within range. A light must be within 20 feet of another light created by this spell, and a light vanishes if it exceeds the spell's range.",
     },
     bard_light_0: {
       name: "Light",
@@ -43,13 +33,7 @@
       components: ["V","M"],
       material_desc: "a firefly or phosphorescent moss",
       duration: [1, "hour"],
-      desc: "You touch one Large or smaller object that isn't \
-            being worn or carried by someone else. Until the \
-            spell ends, the object sheds Bright Light in a 20-foot \
-            radius and Dim Light for another 20 feet. The \
-            light can be colored as you like. \
-            Covering the object with something opaque \
-            blocks the light. The spell ends if you cast it again.",
+      desc: "You touch one Large or smaller object that isn't being worn or carried by someone else. Until the spell ends, the object sheds Bright Light in a 20-foot radius and Dim Light for another 20 feet. The light can be colored as you like. Covering the object with something opaque blocks the light. The spell ends if you cast it again.",
     },
     bard_mage_hand_0: {
       name: "Mage Hand",
@@ -61,19 +45,7 @@
       range: [30, "ft"],
       components: ["V","S"],
       duration: [1, "minute"],
-      desc: "A spectral, floating hand appears at a point you \
-            choose within range. The hand lasts for the dura- \
-            tion. The hand vanishes if it is ever more than 30 \
-            feet away from you or if you cast this spell again. \
-            When you cast the spell, you can use the hand \
-            to manipulate an object, open an unlocked door or \
-            container, stow or retrieve an item from an open \
-            container, or pour the contents out of a vial. \
-            As a Magic action on your later turns, you can \
-            control the hand thus again. As part of that action, \
-            you can move the hand up to 30 feet. \
-            The hand can't attack, activate magic items, or \
-            carry more than 10 pounds.",
+      desc: "A spectral, floating hand appears at a point you choose within range. The hand lasts for the duration. The hand vanishes if it is ever more than 30 feet away from you or if you cast this spell again. When you cast the spell, you can use the hand to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial. As a Magic action on your later turns, you can control the hand thus again. As part of that action, you can move the hand up to 30 feet. The hand can't attack, activate magic items, or carry more than 10 pounds.",
     },
     bard_mending_0: {
       name: "Mending",
@@ -86,14 +58,7 @@
       components: ["V","S","M"],
       material_desc: "two lodestones",
       duration: [0, "seconds"],
-      desc: "This spell repairs a single break or tear in an object \
-            you touch, such as a broken chain link, two halves \
-            of a broken key, a torn cloak, or a leaking wineskin. \
-            As long as the break or tear is no larger than 1 foot \
-            in any dimension, you mend it, leaving no trace of \
-            the former damage. \
-            This spell can physically repair a magic item, but \
-            it can't restore magic to such an object.",
+      desc: "This spell repairs a single break or tear in an object you touch, such as a broken chain link, two halves of a broken key, a torn cloak, or a leaking wineskin. As long as the break or tear is no larger than 1 foot in any dimension, you mend it, leaving no trace of the former damage. This spell can physically repair a magic item, but it can't restore magic to such an object.",
     },
     bard_message_0: {
       name: "Message",
@@ -106,14 +71,7 @@
       components: ["S","M"],
       material_desc: "a copper wire",
       duration: [1, "round"],
-      desc: "You point toward a creature within range and \
-            whisper a message. The target (and only the target) \
-            hears the message and can reply in a whisper that \
-            only you can hear. \
-            You can cast this spell through solid objects if you \
-            are familiar with the target and know it is beyond \
-            the barrier. Magical silence; 1 foot of stone, metal or \
-            wood; or a thin sheet of lead blocks the spell.",
+      desc: "You point toward a creature within range and whisper a message. The target (and only the target) hears the message and can reply in a whisper that only you can hear. You can cast this spell through solid objects if you are familiar with the target and know it is beyond the barrier. Magical silence; 1 foot of stone, metal or wood; or a thin sheet of lead blocks the spell.",
     },
     bard_minor_illusion_0: {
       name: "Minor Illusion",
@@ -126,16 +84,7 @@
       components: ["S","M"],
       material_desc: "a bit of fleece",
       duration: [1, "minute"],
-      desc: "You create a sound or an image of an object within \
-            range that lasts for the duration. See the descrip- \
-            tions below for the effects of each. The illusion ends \
-            if you cast this spell again.\
-            If a creature takes a Study action to examine the \
-            sound or image, the creature can determine that it \
-            is an illusion with a successful INT (Investigation) \
-            check against your spell save DC. If a creature disc- \
-            erns the illusion for what it is, the illusion becomes \
-            faint to the creature.",
+      desc: "You create a sound or an image of an object within range that lasts for the duration. See the descriptions below for the effects of each. The illusion ends if you cast this spell again. If a creature takes a Study action to examine the sound or image, the creature can determine that it is an illusion with a successful INT (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the illusion becomes faint to the creature.",
       effects: {
         sound: {
           name: "Sound",
@@ -217,11 +166,11 @@
       components: ["V","S"],
       duration: [0, "seconds"],
       desc: "You launch a mote of light at one creature or object \
-            within range. Make a ranged spell attack against \
-            the target. On a hit, the target takes 1d8 Radiant \
-            damage, and until the end of your next turn, it emits \
-            Dim Light in a 10 ft radius and can't benefit from \
-            the Invisible condition.",
+within range. Make a ranged spell attack against \
+the target. On a hit, the target takes 1d8 Radiant \
+damage, and until the end of your next turn, it emits \
+Dim Light in a 10 ft radius and can't benefit from \
+the Invisible condition.",
       cantrip_upgrade: "The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).",
     },
     bard_thunderclap_0: {
