@@ -20,8 +20,8 @@
       components: ["V","S"],
       duration: [1, "minute"],
       desc: "You touch a willing creature and choose a skill. Un- \
-            til the spell ends, the creature adds 1d4 to any abil- \
-            ity check using the chosen skill."
+til the spell ends, the creature adds 1d4 to any abil- \
+ity check using the chosen skill."
     },
     cleric_light_0: {
       name: "Light",
@@ -35,12 +35,12 @@
       material_desc: "a firefly or phosphorescent moss",
       duration: [1, "hour"],
       desc: "You touch one Large or smaller object that isn't \
-            being worn or carried by someone else. Until the \
-            spell ends, the object sheds Bright Light in a 20-foot \
-            radius and Dim Light for another 20 feet. The \
-            light can be colored as you like. \
-            Covering the object with something opaque \
-            blocks the light. The spell ends if you cast it again.",
+being worn or carried by someone else. Until the \
+spell ends, the object sheds Bright Light in a 20-foot \
+radius and Dim Light for another 20 feet. The \
+light can be colored as you like. \
+Covering the object with something opaque \
+blocks the light. The spell ends if you cast it again.",
     },
     cleric_mending_0: {
       name: "Mending",
@@ -54,13 +54,13 @@
       material_desc: "two lodestones",
       duration: [0, "seconds"],
       desc: "This spell repairs a single break or tear in an object \
-            you touch, such as a broken chain link, two halves \
-            of a broken key, a torn cloak, or a leaking wineskin. \
-            As long as the break or tear is no larger than 1 foot \
-            in any dimension, you mend it, leaving no trace of \
-            the former damage. \
-            This spell can physically repair a magic item, but \
-            it can't restore magic to such an object.",
+you touch, such as a broken chain link, two halves \
+of a broken key, a torn cloak, or a leaking wineskin. \
+As long as the break or tear is no larger than 1 foot \
+in any dimension, you mend it, leaving no trace of \
+the former damage. \
+This spell can physically repair a magic item, but \
+it can't restore magic to such an object.",
     },
     cleric_resistance_0: {
       name: "Resistance",
@@ -73,12 +73,12 @@
       components: ["V","S"],
       duration: [1, "minute"],
       desc: "You touch a willing creature and choose a damage \
-            type: Acid, Bludgeoning, Cold, Fire, Lightning, Ne- \
-            crotic, Piercing, Poison, Radiant, Slashing, or Thun- \
-            der. When the creature takes damage of the chosen \
-            type before the spell ends, the creature reduces the \
-            total damage taken by 1d4. A creature can benefit \
-            from this spell only once per turn.",
+type: Acid, Bludgeoning, Cold, Fire, Lightning, Ne- \
+crotic, Piercing, Poison, Radiant, Slashing, or Thun- \
+der. When the creature takes damage of the chosen \
+type before the spell ends, the creature reduces the \
+total damage taken by 1d4. A creature can benefit \
+from this spell only once per turn.",
     },
     cleric_sacred_flame_0: {
       name: "Sacred Flame",
@@ -91,10 +91,10 @@
       components: ["V","S"],
       duration: [0, "seconds"],
       desc: "Flame-like radiance descends on a creature that you \
-            can see within range. The target must succeed on \
-            a DEX saving throw or take 1d8 Radiant damage. \
-            The target gains no benefit from Half Cover or \
-            Three-Quarters Cover for this save.",
+can see within range. The target must succeed on \
+a DEX saving throw or take 1d8 Radiant damage. \
+The target gains no benefit from Half Cover or \
+Three-Quarters Cover for this save.",
       cantrip_upgrade: "The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).",
     },
     cleric_spare_the_dying_0: {
@@ -108,7 +108,7 @@
       components: ["V","S"],
       duration: [0, "seconds"],
       desc: "Choose a creature within range that has 0 HP \
-            and isn't dead. The creature becomes Stable.",
+and isn't dead. The creature becomes Stable.",
       cantrip_upgrade: "The range doubles when you reach levels 5 (30 ft), 11 (60 ft), and 17 (120 ft).",
     },
     cleric_thaumaturgy_0: {
@@ -121,9 +121,9 @@
       range: [30, "ft"],
       components: ["V"],
       desc: "You manifest a minor wonder within range. You \
-            create one of the effects below within range. If you \
-            cast this spell multiple times, you can have up to \
-            three of its 1-minute effects active at a time.",
+create one of the effects below within range. If you \
+cast this spell multiple times, you can have up to \
+three of its 1-minute effects active at a time.",
       effects: {
         altered_eyes: {
           name: "Altered Eyes",
