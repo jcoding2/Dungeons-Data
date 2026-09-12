@@ -1,4 +1,4 @@
-{
+{ 
   name: "Druid Level 1 Spells (SRD)",
   date_added: "September 6th, 2026",
   last_updated: "September 6th, 2026",
@@ -57,6 +57,33 @@
       duration: [10, "minute"],
       desc: "For the duration, you sense the presence of magical effects within 30 ft. of yourself. If you sense such effects, you can take the Magic action to see a faint aura around any visible creature or object in the area that bears the magic, and if an effect was created by a spell, you learn the spell's school of magic. The spell is blocked by 1 ft. of stone, dirt, or wood; or a thin sheet of lead.",
     },
+    druid_detect_poison_and_disease_1: {
+      name: "Detect Poison and Disease",
+      id: "druid_detect_poison_and_disease_1",
+      level: 1,
+      school: "divination",
+      concentration: true,
+      casting_time: "1 action, or 1 ritual",
+      range: "self",
+      components: ["V","S","M"],
+      material_desc: "a yew leaf",
+      duration: [10, "minute"],
+      desc: "For the duration, you sense the location of poisons, poisonous or venomous creatures, and magical contagions within 30 ft. of yourself. You sense the kind of poison, creature, or contagion in each case. \
+The spell is blocked by 1 ft. of stone, dirt or wood; 1 in. of metal; or a thin sheet of lead."
+    },
+    druid_entangle_1: {
+      name: "Entangle",
+      id: "druid_entangle_1",
+      level: 1,
+      school: "conjuration",
+      concentration: true,
+      casting_time: "1 action",
+      range: [90, "ft"],
+      components: ["V","S"],
+      duration: [1, "minute"],
+      desc: "Grasping plants sprout from the ground in a 20 ft. square within range. For the duration, these plants turn the ground in the area into Difficult Terrain. They disappear when the spell ends. \
+Each creature (other than you) in the area when you cast the spell must succeed on a STR save or have the Restrained condition until the spell ends. A Restrained creature can take an action to make a STR (Athletics) check against your Spell Save DC. On a success, it frees itself from the grasping plants and is no longer Restrained by them."
+    },
     druid_faerie_fire_1: {
       name: "Faerie Fire",
       id: "druid_faerie_fire_1",
@@ -69,6 +96,31 @@
       duration: [1, "minute"],
       desc: "Objects in a 20 ft. Cube within range are outlined in blue, green, or violet light (your choice). Each creature in the Cube is also outlined if it fails a DEX saving throw. For the duration, objects and affected creatures shed Dim Light in a 10 ft. radius and can't benefit from the Invisible condition. \
 Attack rolls against an affected creature or object have Advantage if the attacker can see it."
+    },
+    druid_fog_cloud_1: {
+      name: "Fog Cloud",
+      id: "druid_fog_cloud_1",
+      level: 1,
+      school: "conjuration",
+      concentration: true,
+      range: [120, "ft"],
+      components: ["V","S"],
+      duration: [1, "hour"],
+      desc: "You create a 20 ft. radius Sphere of fog centered on a point within range. The Sphere is Heavily Obscured. It lasts for the duration or until a strong wind (such as a /Gust of Wind/) disperses it.",
+      higher_levels: "The fog's radius increases by 20 ft. for each spell slot level above 1."
+    },
+    druid_goodberry_1: {
+      name: "Goodberry",
+      id: "druid_goodberry_1",
+      level: 1,
+      school: "conjuration",
+      concentration: false,
+      range: "self",
+      components: ["V","S","M"],
+      material_desc: "a sprig of mistletoe",
+      duration: [24, "hour"],
+      desc: "Ten berries appear in your hand and are infused with magic for the duration. A creature can take a Bonus Action to eat one berry. Eating a berry restores 1 HP, and the berry provides enough nourishment to sustain a creature for 1 Day. \
+Uneaten berries disappear when the spell ends."
     },
     druid_healing_word_1: {
       name: "Healing Word",
@@ -83,6 +135,33 @@ Attack rolls against an affected creature or object have Advantage if the attack
       desc: "A creature of your choice that you can see within range regains Hit Points equal to 2d4 plus your spellcasting ability modifier.",
       higher_levels: "The healing increases by 2d4 for each spell slot level above 1."
     },
+    druid_ice_knife_1: {
+      name: "Ice Knife",
+      id: "druid_ice_knife_1",
+      level: 1,
+      school: "conjuration",
+      concentration: false,
+      casting_time: "1 action",
+      range: [60, "ft"],
+      components: ["S","M"],
+      material_desc: "a drop of water or a piece of ice",
+      duration: [0, "seconds"],
+      desc: "You create a shard of ice and fling it at one creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 Piercing damage. Hit or miss, the shard then explodes. The target and each creature within 5 ft. of it must succeed on a DEX save or take 2d6 Cold damage.",
+      higher_levels: "The Cold damage increases by 1d6 for each spell slot level above 1."
+    },
+    druid_jump_1: {
+      name: "Jump",
+      level: 1,
+      school: "transmutation",
+      concentration: false,
+      casting_time: "1 bonus action",
+      range: "touch",
+      components: ["V","S","M"],
+      material_desc: "a grasshopper's hind leg",
+      duration: [1, "minute"],
+      desc: "You touch a willing creature. Once on each of its turns until the spell ends, that creature can jump up to 30 ft. by spending 10 ft. of movement.",
+      higher_levels: "You can target one additional creature for each spell slot level above 1."
+    },
     druid_longstrider_1: {
       name: "Longstrider",
       id: "druid_longstrider_1",
@@ -96,6 +175,38 @@ Attack rolls against an affected creature or object have Advantage if the attack
       duration: [1, "hour"],
       desc: "You touch a creature. The target's Speel increases by 10 ft. until the spell ends.",
       higher_levels: "You can target one additional creature for each spell slot level above 1."
+    },
+    druid_protection_from_evil_and_good_1: {
+      name: "Protection from Evil and Good",
+      id: "druid_protection_from_evil_and_good_1",
+      level: 1,
+      school: "abjuration",
+      concentration: true,
+      casting_time: "1 action",
+      range: "touch",
+      components: ["V","S","M"],
+      material_desc: "a flask of Holy Water worth 25+ GP, which the spell consumes",
+      duration: [10, "minute"],
+      desc: "Until the spell ends, one willing creature you touch is protected \
+against creatures that are Aberrations, Celestials, Elementals, Fey, Fiends, or Undead. \
+The protection grants several benefits: Creatures of those types have Disadvantage on attack \
+rolls against the target. The target also can't be possessed by or gain the Charmed or \
+Frightened conditions from them. If the target is already possessed, Charmed, or Frightened \
+by such a creature, the target has Advantage on any new saving throw against the relevant \
+effect."
+    },
+    druid_purify_food_and_drink_1: {
+      name: "Purify Food and Drink",
+      id: "druid_purify_food_and_drink_1",
+      level: 1,
+      school: "transmutation",
+      concentration: false,
+      casting_time: "1 action, or 1 ritual",
+      range: [10, "ft"],
+      components: ["V","S"],
+      duration: [0, "seconds"],
+      desc: "You remove poison and rot form nonmagical food and rink in a 5 ft. \
+radius Sphere centered on a point within range."
     },
     druid_speak_with_animals_1: {
       name: "Speak with Animals",
