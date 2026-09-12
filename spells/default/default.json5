@@ -1,7 +1,7 @@
 // NOTE: This is the default spellset, and should not be deleted.
 {
   name: "Default Spellset",
-  desc: "Contains all System Reference Document spells",
+  desc: "Contains the latest version of D&D's spells.",
   date_added: "4/22/2026",
   last_updated: "9/3/2026",
   source: "System Reference Document v5.2.1",

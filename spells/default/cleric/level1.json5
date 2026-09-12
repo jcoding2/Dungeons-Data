@@ -1,0 +1,268 @@
+// This work includes material from the System Reference Document 5.2.1 (“SRD 5.2.1”) by Wizards of the
+// Coast LLC, available at https://www.dndbeyond.com/srd. The SRD 5.2.1 is licensed under the Creative
+// Commons Attribution 4.0 International License, available at https://creativecommons.org/licenses/by/4.0/legalcode.
+
+{
+  name: "Cleric Level 1 Spells (SRD)",
+  date_added: "September 5th, 2026",
+  last_updated: "September 5th, 2026",
+  source: "System Reference Document v5.2.1",
+  author: "Dungeons & Data authors",
+  spells: {
+    cleric_bane_1: {
+      name: "Bane",
+      id: "cleric_bane_1",
+      level: 1,
+      school: "enchantment",
+      concentration: true,
+      casting_time: "1 action",
+      range: [30, "ft"],
+      components: ["V","S","M"],
+      material_desc: "a drop of blood",
+      duration: [1, "minute"],
+      desc: "Up to three creatures of your choice that you can see within range must each make a CHA saving throw. Whenever a target fails this save makes an attack or saving throw roll before the spell ends, the target must subtract 1d4 from the attack roll or save.",
+      higher_levels: "You can target one additional creature for each spell slot level above 1."
+    },
+    cleric_bless_1: {
+      name: "Bless",
+      id: "cleric_bless_1",
+      level: 1,
+      school: "enchantment",
+      concentration: true,
+      casting_time: "1 action",
+      range: [30, "ft"],
+      components: ["V","S","M"],
+      material_desc: "a Holy Symbol worth 5+ GP",
+      duration: [1, "minute"],
+      desc: "You bless up to three creatures within range. Whenever a target makes an attack roll or a saving throw before the spell ends, the target adds 1d4 to the attack roll or save.",
+      higher_levels: "You can target one additional creature for each spell slot level above 1."
+    },
+// clerics really confuse me sometimes. they're like one third Bard, one third Druid,
+// and one third their own weird little thing.
+    cleric_command_1: {
+      name: "Command",
+      id: "cleric_command_1",
+      level: 1,
+      school: "enchantment",
+      concentration: false,
+      casting_time: "1 action",
+      range: [60, "ft"],
+      components: ["V"],
+      duration: [0, "seconds"],
+      desc: "You speak a one-word command to a creature you can see within range. The target must succeed on a WIS saving throw or follow the command on its next turn. Choose the command from these options:",
+      effects: {
+        approach: {
+          name: "Approach",
+          desc: "The target moves toward you by the shortest and most direct route, ending its turn if it moves within 5 ft. of you."
+        },
+        drop: {
+          name: "Drop",
+          desc: "The target drops whatever it's holding and then ends its turn."
+        },
+        flee: {
+          name: "Flee",
+          desc: "The target spends its turn moving away from you by the fastest available means."
+        },
+        grovel: {
+          name: "Grovel",
+          desc: "The target has the Prone condition and then ends its turn."
+        },
+        halt: {
+          name: "Halt",
+          desc: "On its turn, the target doesn't move and takes no action nor Bonus Action."
+        }
+      },
+      higher_levels: "You can affect one additional creature for each spell slot level above 1."
+    },
+    cleric_create_or_destroy_water_1: {
+      name: "Create or Destroy Water",
+      id: "cleric_create_or_destroy_water_1",
+      level: 1,
+      school: "transmutation",
+      concentration: false,
+      casting_time: "1 action",
+      range: [30, "ft"],
+      components: ["V","S","M"],
+      material_desc: "a mix of water and sand",
+      duration: [0, "seconds"], // I just noticed that technically any Instantaneous spells cannot be Concentration as there'd be nothing to concentrate on. Huh.
+      effects: {
+        create_water: {
+          name: "Create Water",
+          desc: "You create up to 10 gal. of clean, fresh water within range in \
+an open container. Alternatively, the water falls as rain in a 30 ft. Cube within \
+range, extinguishing exposed flames there."
+        },
+        destroy_water: {
+          name: "Destroy Water",
+          desc: "You destroy up to 10 gal. of water in an open container within \
+range. Alternatively, you destroy fog in a 30 ft. Cube within range."
+        },
+      },
+    },
+    // honestly, it's kinda nice not having to constantly write new spells,
+    // just having to copy and paste them.
+    cleric_cure_wounds_1: {
+      name: "Cure Wounds",
+      id: "cleric_cure_wounds_1",
+      level: 1,
+      school: "abjuration",
+      concentration: false,
+      casting_time: "1 action",
+      range: "touch",
+      components: ["V","S"],
+      duration: [0, "seconds"],
+      desc: "A creature you touch regains a number of hit points equal to 2d8 plus your spellcasting ability modifier.",
+      higher_levels: "The healing increases by 2d8 for each spell slot level above 1."
+    },
+    cleric_detect_evil_and_good_1: {
+      name: "Detect Evil and Good",
+      id: "cleric_detect_evil_and_good_1",
+      level: 1,
+      school: "divination",
+      concentration: true,
+      casting_time: "1 action",
+      range: "self",
+      components: ["V","S"],
+      duration: [10, "minute"],
+      desc: "For the duration, you sense the location of any Aberration, Celes- \
+tial, Elemental, Fey, Fiend, or Undead within 30 ft. of you. You also sense whether \
+the Hallow spell is active there and, if so, where. \
+\
+The spell is blocked by 1 ft. of stone, dirt, or wood, 1 in. of metal, or a thin sheet of lead."
+    },
+    // seems like Clerics are really good at detecting things
+    cleric_detect_magic_1: {
+      name: "Detect Magic",
+      id: "cleric_detect_magic_1",
+      level: 1,
+      school: "divination",
+      concentration: true,
+      casting_time: "1 action, or 1 ritual",
+      range: "self",
+      components: ["V","S"],
+      duration: [10, "minute"],
+      desc: "For the duration, you sense the presence of magical effects within 30 ft. of yourself. If you sense such effects, you can take the Magic action to see a faint aura around any visible creature or object in the area that bears the magic, and if an effect was created by a spell, you learn the spell's school of magic. The spell is blocked by 1 ft. of stone, dirt, or wood; or a thin sheet of lead.",
+    },
+    cleric_detect_poison_and_disease_1: {
+      name: "Detect Poison and Disease",
+      id: "cleric_detect_poison_and_disease_1",
+      level: 1,
+      school: "divination",
+      concentration: true,
+      casting_time: "1 action, or 1 ritual",
+      range: "self",
+      components: ["V","S","M"],
+      material_desc: "a yew (aka deathberry) leaf",
+      duration: [10, "minute"],
+      desc: "For the duration, you sense the location of poisons, poisonous or venomous creatures, and \
+magical contagions within 30 ft. of yourself. You sense the kind of poison, creature, or contagion in each \
+case. The spell is blocked by 1 ft. of stone, dirt, or wood; 1 in. of metal, or a thin sheet of lead."
+    },
+    cleric_guiding_bolt_1: {
+      name: "Guiding Bolt",
+      id: "cleric_guiding_bolt_1",
+      level: 1,
+      school: "evocation",
+      concentration: false,
+      casting_time: "1 action",
+      range: [120, "ft"],
+      components: ["V","S"],
+      duration: [1, "round"],
+      desc: "You hurl a bolt of light toward a creature within range. Make a \
+ranged spell attack against the target. On a hit, it takes 4d6 Radiant damage, \
+and the next attack roll made against it before the end of your next turn has Advantage.",
+      higher_levels: "The damage increases by 1d6 for each spell slot level above 1."
+    },
+// clerics are also very good at healing.
+    cleric_healing_word_1: {
+      name: "Healing Word",
+      id: "cleric_healing_word_1",
+      level: 1,
+      school: "abjuration",
+      concentration: false,
+      casting_time: "1 bonus action",
+      range: [60, "ft"],
+      components: ["V"],
+      duration: [0, "seconds"],
+      desc: "A creature of your choice that you can see within range regains Hit Points equal to 2d4 plus your spellcasting ability modifier.",
+      higher_levels: "The healing increases by 2d4 for each spell slot level above 1."
+    },
+    cleric_inflict_wounds_1: {
+      name: "Inflict Wounds",
+      id: "cleric_inflict_wounds_1",
+      level: 1,
+      school: "necromancy",
+      concentration: false,
+      casting_time: "1 action",
+      range: "touch",
+      components: ["V","S"],
+      duration: [0, "seconds"],
+      desc: "A creature you touch makes a CON saving throw, taking 2d10 Necrotic \
+damage on a failed save or half damage on a successful one.",
+      higher_levels: "The damage increases by 1d10 for each spell slot level above 1."
+    },
+    cleric_protection_from_evil_and_good_1: {
+      name: "Protection from Evil and Good",
+      id: "cleric_protection_from_evil_and_good_1",
+      level: 1,
+      school: "abjuration",
+      concentration: true,
+      casting_time: "1 action",
+      range: "touch",
+      components: ["V","S","M"],
+      material_desc: "a flask of Holy Water worth 25+ GP, which the spell consumes",
+      duration: [10, "minute"],
+      desc: "Until the spell ends, one willing creature you touch is protected \
+against creatures that are Aberrations, Celestials, Elementals, Fey, Fiends, or Undead. \
+The protection grants several benefits: Creatures of those types have Disadvantage on attack \
+rolls against the target. The target also can't be possessed by or gain the Charmed or \
+Frightened conditions from them. If the target is already possessed, Charmed, or Frightened \
+by such a creature, the target has Advantage on any new saving throw against the relevant \
+effect."
+    },
+    cleric_purify_food_and_drink_1: {
+      name: "Purify Food and Drink",
+      id: "cleric_purify_food_and_drink_1",
+      level: 1,
+      school: "transmutation",
+      concentration: false,
+      casting_time: "1 action, or 1 ritual",
+      range: [10, "ft"],
+      components: ["V","S"],
+      duration: [0, "seconds"],
+      desc: "You remove poison and rot form nonmagical food and rink in a 5 ft. \
+radius Sphere centered on a point within range."
+    },
+    cleric_sanctuary_1: {
+      name: "Sanctuary",
+      id: "cleric_sanctuary_1",
+      level: 1,
+      school: "abjuration",
+      concentration: false,
+      casting_time: "1 bonus action",
+      range: [30, "ft"],
+      components: ["V","S","M"],
+      material_desc: "a shard of glass from a mirror",
+      duration: [1, "minute"],
+      desc: "You ward a creature within range. Until the spell ends, any creature \
+who targets the warded creature with an attack roll or a damaging spell must succeed \
+on a WIS saving throw or either choose a new target or lose the attack or spell. This \
+spell doesn't protect the warded creature from areas of effect. The spell ends if the \
+warded creature makes an attack roll, casts a spell, or deals damage."
+    },
+    cleric_shield_of_faith_1: {
+      name: "Shield of Faith",
+      id: "cleric_shield_of_faith_1",
+      level: 1,
+      school: "abjuration",
+      concentration: true,
+      casting_time: "1 bonus action",
+      range: [60, "ft"],
+      components: ["V","S","M"],
+      material_desc: "a prayer scroll",
+      duration: [10, "minute"],
+      desc: "A shimmering field surrounds a creature of your choice within range, \
+granting it a +2 AC bonus for the duration."
+    }
+  },
+}
