@@ -1,7 +1,7 @@
 { 
   name: "Druid Level 1 Spells (SRD)",
   date_added: "September 6th, 2026",
-  last_updated: "September 6th, 2026",
+  last_updated: "September 12th, 2026",
   source: "System Reference Document v5.2.1",
   author: "Dungeons and Data authors",
   spells: {

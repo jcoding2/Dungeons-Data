@@ -1,0 +1,214 @@
+{
+  name: "Paladin Level 1 Spells (SRD)",
+  date_added: "September 12th, 2026",
+  last_updated: "September 12th, 2026",
+  source: "System Reference Document v5.2.1",
+  author: "Dungeons and Data authors",
+  spells: {
+    paladin_bless_1: {
+      name: "Bless",
+      id: "paladin_bless_1",
+      level: 1,
+      school: "enchantment",
+      concentration: true,
+      casting_time: "1 action",
+      range: [30, "ft"],
+      components: ["V","S","M"],
+      material_desc: "a Holy Symbol worth 5+ GP",
+      duration: [1, "minute"],
+      desc: "You bless up to three creatures within range. Whenever a target makes an attack roll or a saving throw before the spell ends, the target adds 1d4 to the attack roll or save.",
+      higher_levels: "You can target one additional creature for each spell slot level above 1."
+    },
+// paladins really confuse me sometimes. they're like one third Bard, one third Druid,
+// and one third their own weird little thing.
+    paladin_command_1: {
+      name: "Command",
+      id: "paladin_command_1",
+      level: 1,
+      school: "enchantment",
+      concentration: false,
+      casting_time: "1 action",
+      range: [60, "ft"],
+      components: ["V"],
+      duration: [0, "seconds"],
+      desc: "You speak a one-word command to a creature you can see within range. The target must succeed on a WIS saving throw or follow the command on its next turn. Choose the command from these options:",
+      effects: {
+        approach: {
+          name: "Approach",
+          desc: "The target moves toward you by the shortest and most direct route, ending its turn if it moves within 5 ft. of you."
+        },
+        drop: {
+          name: "Drop",
+          desc: "The target drops whatever it's holding and then ends its turn."
+        },
+        flee: {
+          name: "Flee",
+          desc: "The target spends its turn moving away from you by the fastest available means."
+        },
+        grovel: {
+          name: "Grovel",
+          desc: "The target has the Prone condition and then ends its turn."
+        },
+        halt: {
+          name: "Halt",
+          desc: "On its turn, the target doesn't move and takes no action nor Bonus Action."
+        }
+      },
+      higher_levels: "You can affect one additional creature for each spell slot level above 1."
+    },
+    paladin_cure_wounds_1: {
+      name: "Cure Wounds",
+      id: "paladin_cure_wounds_1",
+      level: 1,
+      school: "abjuration",
+      concentration: false,
+      casting_time: "1 action",
+      range: "touch",
+      components: ["V","S"],
+      duration: [0, "seconds"],
+      desc: "A creature you touch regains a number of hit points equal to 2d8 plus your spellcasting ability modifier.",
+      higher_levels: "The healing increases by 2d8 for each spell slot level above 1."
+    },
+    paladin_detect_evil_and_good_1: {
+      name: "Detect Evil and Good",
+      id: "paladin_detect_evil_and_good_1",
+      level: 1,
+      school: "divination",
+      concentration: true,
+      casting_time: "1 action",
+      range: "self",
+      components: ["V","S"],
+      duration: [10, "minute"],
+      desc: "For the duration, you sense the location of any Aberration, Celes- \
+tial, Elemental, Fey, Fiend, or Undead within 30 ft. of you. You also sense whether \
+the Hallow spell is active there and, if so, where. \
+\
+The spell is blocked by 1 ft. of stone, dirt, or wood, 1 in. of metal, or a thin sheet of lead."
+    },
+    // seems like paladins are really good at detecting things
+    paladin_detect_magic_1: {
+      name: "Detect Magic",
+      id: "paladin_detect_magic_1",
+      level: 1,
+      school: "divination",
+      concentration: true,
+      casting_time: "1 action, or 1 ritual",
+      range: "self",
+      components: ["V","S"],
+      duration: [10, "minute"],
+      desc: "For the duration, you sense the presence of magical effects within 30 ft. of yourself. If you sense such effects, you can take the Magic action to see a faint aura around any visible creature or object in the area that bears the magic, and if an effect was created by a spell, you learn the spell's school of magic. The spell is blocked by 1 ft. of stone, dirt, or wood; or a thin sheet of lead.",
+    },
+    paladin_detect_poison_and_disease_1: {
+      name: "Detect Poison and Disease",
+      id: "paladin_detect_poison_and_disease_1",
+      level: 1,
+      school: "divination",
+      concentration: true,
+      casting_time: "1 action, or 1 ritual",
+      range: "self",
+      components: ["V","S","M"],
+      material_desc: "a yew (aka deathberry) leaf",
+      duration: [10, "minute"],
+      desc: "For the duration, you sense the location of poisons, poisonous or venomous creatures, and \
+magical contagions within 30 ft. of yourself. You sense the kind of poison, creature, or contagion in each \
+case. The spell is blocked by 1 ft. of stone, dirt, or wood; 1 in. of metal, or a thin sheet of lead."
+    },
+    paladin_divine_favor_1: {
+      name: "Divine Favor",
+      id: "paladin_divine_favor_1",
+      level: 1,
+      school: "transmutation",
+      concentration: false,
+      casting_time: "1 bonus action",
+      range: "self",
+      components: ["V","S"],
+      duration: [1, "minute"],
+      desc: "Until the spell ends, your attacks with weapons deal an extra 1d4 Radiant damage on a hit."
+    },
+    paladin_divine_smite_1: {
+      name: "Divine Smite",
+      id: "paladin_divine_smite_1",
+      level: 1,
+      school: "evocation",
+      concentration: false,
+      casting_time: "1 bonus action, which you take immediately after hitting a target with a Melee weapon or an Unarmed Strike",
+      range: "self",
+      components: ["V"],
+      duration: [0, "seconds"],
+      desc: "The target takes an extra 2d8 Radiant damage from the attack. The damage increases by 1d8 if the target is a Fiend or Undead.",
+      higher_levels: "The damage increases by 1d8 for each spell slot level above 1."
+    },
+    paladin_heroism_1: {
+      name: "Heroism",
+      id: "paladin_heroism_1",
+      level: 1,
+      school: "enchantment",
+      concentration: true,
+      casting_time: "1 action",
+      range: "touch",
+      components: ["V","S"],
+      duration: [1, "minute"],
+      desc: "A willing creature you touch is imbued with bravery. Until the spell ends, the creature is immune to the Frightened condition and gains Temporary Hit Points equal to your spellcasting ability modifier at the start of each of its turns.",
+      higher_levels: "You can target one additional creature for each spell slot level above 1."
+    },
+    paladin_protection_from_evil_and_good_1: {
+      name: "Protection from Evil and Good",
+      id: "paladin_protection_from_evil_and_good_1",
+      level: 1,
+      school: "abjuration",
+      concentration: true,
+      casting_time: "1 action",
+      range: "touch",
+      components: ["V","S","M"],
+      material_desc: "a flask of Holy Water worth 25+ GP, which the spell consumes",
+      duration: [10, "minute"],
+      desc: "Until the spell ends, one willing creature you touch is protected \
+against creatures that are Aberrations, Celestials, Elementals, Fey, Fiends, or Undead. \
+The protection grants several benefits: Creatures of those types have Disadvantage on attack \
+rolls against the target. The target also can't be possessed by or gain the Charmed or \
+Frightened conditions from them. If the target is already possessed, Charmed, or Frightened \
+by such a creature, the target has Advantage on any new saving throw against the relevant \
+effect."
+    },
+    paladin_purify_food_and_drink_1: {
+      name: "Purify Food and Drink",
+      id: "paladin_purify_food_and_drink_1",
+      level: 1,
+      school: "transmutation",
+      concentration: false,
+      casting_time: "1 action, or 1 ritual",
+      range: [10, "ft"],
+      components: ["V","S"],
+      duration: [0, "seconds"],
+      desc: "You remove poison and rot form nonmagical food and rink in a 5 ft. \
+radius Sphere centered on a point within range."
+    },
+    paladin_searing_smite_1: {
+      name: "Searing Smite",
+      id: "paladin_searing_smite_1",
+      level: 1,
+      school: "evocation",
+      concentration: false,
+      casting_time: "1 bonus action, which you take immediately after hitting a target with a Melee weapon or an Unarmed Strike",
+      range: "self",
+      components: ["V"],
+      duration: [1, "minute"],
+      desc: "As you hit the target, it takes an extra 1d6 Fire damage from the attack. At the start of each of its turns until the spell ends, the target takes 1d6 Fire damage and makes a CON save. On a failed save, the spell continues. If it's successful, the spell ends.",
+      higher_levels: "All the damage increases by 1d6 for each spell slot level above 1."
+    },
+    paladin_shield_of_faith_1: {
+      name: "Shield of Faith",
+      id: "paladin_shield_of_faith_1",
+      level: 1,
+      school: "abjuration",
+      concentration: true,
+      casting_time: "1 bonus action",
+      range: [60, "ft"],
+      components: ["V","S","M"],
+      material_desc: "a prayer scroll",
+      duration: [10, "minute"],
+      desc: "A shimmering field surrounds a creature of your choice within range, \
+granting it a +2 AC bonus for the duration."
+    }
+  }
+}
