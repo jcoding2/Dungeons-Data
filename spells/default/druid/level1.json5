@@ -151,6 +151,7 @@ Uneaten berries disappear when the spell ends."
     },
     druid_jump_1: {
       name: "Jump",
+      id: "druid_jump_1",
       level: 1,
       school: "transmutation",
       concentration: false,

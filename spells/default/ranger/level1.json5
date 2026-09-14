@@ -1,0 +1,180 @@
+{
+  name: "Ranger Level 1 Spells (SRD)",
+  date_created: "September 12th, 2026",
+  last_updated: "September 13th, 2026",
+  source: "System Reference Document v5.2.1",
+  author: "Dungeons and Data authors",
+  spells: {
+    ranger_alarm_1: {
+      name: "Alarm",
+      id: "ranger_alarm_1",
+      level: 1,
+      school: "abjuration",
+      concentration: false,
+      casting_time: "1 minute, or 1 ritual",
+      range: [30, "ft"],
+      components: ["V","S","M"],
+      material_desc: "a bell and silver wire",
+      duration: [8, "hour"],
+      desc: "You set an alarm against intrusion. Choose a door, a window, or an area within range that is no larger than a 20 ft. Cube. Until the spell ends, an alarm alerts you whenever a creature touches or enters the warded area. When you cast the spell, you can designate creatures that won't set off the alarm. You can also choose whether the alarm is audible or mental.",
+      effects: {
+        audible_alarm: {
+          name: "Audible Alarm",
+          desc: "The alarm produces the sound of a handbell for 10 sec. within 60 ft. of the warded area."
+        },
+        mental_alarm: {
+          name: "Mental Alarm",
+          desc: "You are alerted by a mental ping if you are within 1 mi. of the warded area. This ping also awakens you if you're asleep."
+        }
+      }
+    },
+    ranger_animal_friendship_1: {
+      name: "Animal Friendship",
+      id: "ranger_animal_friendship_1",
+      level: 1,
+      school: "enchantment",
+      concentration: false,
+      casting_time: "1 action",
+      range: [60, "ft"],
+      components: ["V","S","M"],
+      material_desc: "a morsel of food",
+      duration: [24, "hour"],
+      desc: "Target a Beast that you can see within range. The target must succeed on a Wisdom saving throw or have the Charmed condition for the duration. If you or one of your allies deals damage to the target, the spell ends.",
+      higher_levels: "You can target one additional Beast for each spell slot level above 1."
+    },
+    ranger_cure_wounds_1: {
+      name: "Cure Wounds",
+      id: "ranger_cure_wounds_1",
+      level: 1,
+      school: "abjuration",
+      concentration: false,
+      casting_time: "1 action",
+      range: "touch",
+      components: ["V","S"],
+      duration: [0, "seconds"],
+      desc: "A creature you touch regains a number of hit points equal to 2d8 plus your spellcasting ability modifier.",
+      higher_levels: "The healing increases by 2d8 for each spell slot level above 1."
+    },
+    ranger_detect_magic_1: {
+      name: "Detect Magic",
+      id: "ranger_detect_magic_1",
+      level: 1,
+      school: "divination",
+      concentration: true,
+      casting_time: "1 action, or 1 ritual",
+      range: "self",
+      components: ["V","S"],
+      duration: [10, "minute"],
+      desc: "For the duration, you sense the presence of magical effects within 30 ft. of yourself. If you sense such effects, you can take the Magic action to see a faint aura around any visible creature or object in the area that bears the magic, and if an effect was created by a spell, you learn the spell's school of magic. The spell is blocked by 1 ft. of stone, dirt, or wood; or a thin sheet of lead.",
+    },
+    ranger_detect_poison_and_disease_1: {
+      name: "Detect Poison and Disease",
+      id: "ranger_detect_poison_and_disease_1",
+      level: 1,
+      school: "divination",
+      concentration: true,
+      casting_time: "1 action, or 1 ritual",
+      range: "self",
+      components: ["V","S","M"],
+      material_desc: "a yew (aka deathberry) leaf",
+      duration: [10, "minute"],
+      desc: "For the duration, you sense the location of poisons, poisonous or venomous creatures, and \
+magical contagions within 30 ft. of yourself. You sense the kind of poison, creature, or contagion in each \
+case. The spell is blocked by 1 ft. of stone, dirt, or wood; 1 in. of metal, or a thin sheet of lead."
+    },
+    ranger_entangle_1: {
+      name: "Entangle",
+      id: "ranger_entangle_1",
+      level: 1,
+      school: "conjuration",
+      concentration: true,
+      casting_time: "1 action",
+      range: [90, "ft"],
+      components: ["V","S"],
+      duration: [1, "minute"],
+      desc: "Grasping plants sprout from the ground in a 20 ft. square within range. For the duration, these plants turn the ground in the area into Difficult Terrain. They disappear when the spell ends. \
+Each creature (other than you) in the area when you cast the spell must succeed on a STR save or have the Restrained condition until the spell ends. A Restrained creature can take an action to make a STR (Athletics) check against your Spell Save DC. On a success, it frees itself from the grasping plants and is no longer Restrained by them."
+    },
+    ranger_fog_cloud_1: {
+      name: "Fog Cloud",
+      id: "ranger_fog_cloud_1",
+      level: 1,
+      school: "conjuration",
+      concentration: true,
+      range: [120, "ft"],
+      components: ["V","S"],
+      duration: [1, "hour"],
+      desc: "You create a 20 ft. radius Sphere of fog centered on a point within range. The Sphere is Heavily Obscured. It lasts for the duration or until a strong wind (such as a /Gust of Wind/) disperses it.",
+      higher_levels: "The fog's radius increases by 20 ft. for each spell slot level above 1."
+    },
+    ranger_goodberry_1: {
+      name: "Goodberry",
+      id: "ranger_goodberry_1",
+      level: 1,
+      school: "conjuration",
+      concentration: false,
+      casting_time: "1 action",
+      range: "self",
+      components: ["V","S","M"],
+      material_desc: "a sprig of mistletoe",
+      duration: [24, "hour"],
+      desc: "Ten berries appear in your hand and are infused with magic for the duration. A creature can take a Bonus Action to eat one berry. Eating a berry restores 1 HP, and the berry provides enough nourishment to sustain a creature for 1 Day. \
+Uneaten berries disappear when the spell ends."
+    },
+    ranger_hunters_mark_1: {
+      name: "Hunter's Mark",
+      id: "ranger_hunters_mark_1",
+      level: 1,
+      school: "divination",
+      concentration: true,
+      casting_time: "1 bonus action",
+      range: [90, "ft"],
+      components: ["V"],
+      duration: [1, "hour"],
+      desc: "You magically mark one creature you can see within range as your quarry. Until the spell ends, you deal an extra 1d6 Force damage to the target whenever you hit it with an attack roll. You also have Advantage on any WIS (Perception/Survival) check you make to find it. \
+If the target drops to 0 HP before the spell ends, you can take a Bonus Action to move the mark to a new creature you can see within range.",
+      higher_levels: "Your Concentration lasts longer with a spell slot of 3-4 (8h) or 5 and up (24h)"
+    },
+    ranger_jump_1: {
+      name: "Jump",
+      id: "ranger_jump_1",
+      level: 1,
+      school: "transmutation",
+      concentration: false,
+      casting_time: "1 bonus action",
+      range: "touch",
+      components: ["V","S","M"],
+      material_desc: "a grasshopper's hind leg",
+      duration: [1, "minute"],
+      desc: "You touch a willing creature. Once on each of its turns until the spell ends, that creature can jump up to 30 ft. by spending 10 ft. of movement.",
+      higher_levels: "You can target one additional creature for each spell slot level above 1."
+    },
+    ranger_longstrider_1: {
+      name: "Longstrider",
+      id: "ranger_longstrider_1",
+      level: 1,
+      school: "transmutation",
+      concentration: false,
+      casting_time: "1 action",
+      range: "touch",
+      components: ["V","S","M"],
+      material_desc: "a pinch of dirt",
+      duration: [1, "hour"],
+      desc: "You touch a creature. The target's Speel increases by 10 ft. until the spell ends.",
+      higher_levels: "You can target one additional creature for each spell slot level above 1."
+    },
+    ranger_speak_with_animals_1: {
+      name: "Speak with Animals",
+      id: "ranger_speak_with_animals_1",
+      level: 1,
+      school: "divination",
+      concentration: false,
+      casting_time: "1 action, or 1 ritual",
+      range: "self",
+      components: ["V","S"],
+      duration: [10, "minute"],
+      desc: "For the duration, you can comprehend and verbally communicate with Beasts, and you can use any of the Influence action's skill options with them. \
+Most Beasts have little to say about topics that don't pertain to survival or companionship, but at minimum, a Beast can give you information about nearby locations and monsters, including whatever it has percieved within the past day."
+    },
+  }
+}
