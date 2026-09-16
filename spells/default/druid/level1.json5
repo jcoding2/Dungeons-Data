@@ -106,34 +106,6 @@ The spell is blocked by 1 ft. of stone, dirt or wood; 1 in. of metal; or a thin 
       range: [90, "ft"],
       components: ["V","S"],
       duration: [1, "minute"],
-      desc: "Grasping plants sprout from the ground in a 20 ft. square within range. For the duration, these plants turn the ground in the area into Difficult Terrain. They disappear when the spell ends. \
-Each creature (other than you) in the area when you cast the spell must succeed on a STR save or have the Restrained condition until the spell ends. A Restrained creature can take an action to make a STR (Athletics) check against your Spell Save DC. On a success, it frees itself from the grasping plants and is no longer Restrained by them."
-    },
-    druid_detect_poison_and_disease_1: {
-      name: "Detect Poison and Disease",
-      id: "druid_detect_poison_and_disease_1",
-      level: 1,
-      school: "divination",
-      concentration: true,
-      casting_time: "1 action, or 1 ritual",
-      range: "self",
-      components: ["V","S","M"],
-      material_desc: "a yew (aka deathberry) leaf",
-      duration: [10, "minute"],
-      desc: "For the duration, you sense the location of poisons, poisonous or venomous creatures, and \
-magical contagions within 30 ft. of yourself. You sense the kind of poison, creature, or contagion in each \
-case. The spell is blocked by 1 ft. of stone, dirt, or wood; 1 in. of metal, or a thin sheet of lead."
-    },
-    druid_entangle_1: {
-      name: "Entangle",
-      id: "druid_entangle_1",
-      level: 1,
-      school: "conjuration",
-      concentration: true,
-      casting_time: "1 action",
-      range: [90, "ft"],
-      components: ["V","S"],
-      duration: [1, "minute"],
       desc: "Grasping plants sprout"
     },
     druid_faerie_fire_1: {
