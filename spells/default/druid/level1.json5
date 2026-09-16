@@ -2,7 +2,7 @@
 // Coast LLC, available at https://www.dndbeyond.com/srd. The SRD 5.2.1 is licensed under the Creative
 // Commons Attribution 4.0 International License, available at https://creativecommons.org/licenses/by/4.0/legalcode.
 {
-  name: "Druid Level 1 Spells (SRD)",
+  name: "druid Level 1 Spells (SRD)",
   date_added: "September 6th, 2026",
   last_updated: "September 6th, 2026",
   source: "System Reference Document v5.2.1",
@@ -35,6 +35,31 @@
       desc: "One Humanoid you can see within range makes a WIS saving throw. It does so with Advantage if you (or your allies) are fighting it. On a failed save, the target has the Charmed condition until the spell ends or until you or your allies damage it. The Charmed creature is Friendly to you. When the spell ends, the target knows it was Charmed by you.",
       higher_levels: "You can target one additional creature for each spell slot level above 1."
     },
+    druid_create_or_destroy_water_1: {
+      name: "Create or Destroy Water",
+      id: "druid_create_or_destroy_water_1",
+      level: 1,
+      school: "transmutation",
+      concentration: false,
+      casting_time: "1 action",
+      range: [30, "ft"],
+      components: ["V","S","M"],
+      material_desc: "a mix of water and sand",
+      duration: [0, "seconds"], // I just noticed that technically any Instantaneous spells cannot be Concentration as there'd be nothing to concentrate on. Huh.
+      effects: {
+        create_water: {
+          name: "Create Water",
+          desc: "You create up to 10 gal. of clean, fresh water within range in \
+an open container. Alternatively, the water falls as rain in a 30 ft. Cube within \
+range, extinguishing exposed flames there."
+        },
+        destroy_water: {
+          name: "Destroy Water",
+          desc: "You destroy up to 10 gal. of water in an open container within \
+range. Alternatively, you destroy fog in a 30 ft. Cube within range."
+        },
+      },
+    },
     druid_cure_wounds_1: {
       name: "Cure Wounds",
       id: "druid_cure_wounds_1",
@@ -59,6 +84,33 @@
       components: ["V","S"],
       duration: [10, "minute"],
       desc: "For the duration, you sense the presence of magical effects within 30 ft. of yourself. If you sense such effects, you can take the Magic action to see a faint aura around any visible creature or object in the area that bears the magic, and if an effect was created by a spell, you learn the spell's school of magic. The spell is blocked by 1 ft. of stone, dirt, or wood; or a thin sheet of lead.",
+    },
+    druid_detect_poison_and_disease_1: {
+      name: "Detect Poison and Disease",
+      id: "druid_detect_poison_and_disease_1",
+      level: 1,
+      school: "divination",
+      concentration: true,
+      casting_time: "1 action, or 1 ritual",
+      range: "self",
+      components: ["V","S","M"],
+      material_desc: "a yew (aka deathberry) leaf",
+      duration: [10, "minute"],
+      desc: "For the duration, you sense the location of poisons, poisonous or venomous creatures, and \
+magical contagions within 30 ft. of yourself. You sense the kind of poison, creature, or contagion in each \
+case. The spell is blocked by 1 ft. of stone, dirt, or wood; 1 in. of metal, or a thin sheet of lead."
+    },
+    druid_entangle_1: {
+      name: "Entangle",
+      id: "druid_entangle_1",
+      level: 1,
+      school: "conjuration",
+      concentration: true,
+      casting_time: "1 action",
+      range: [90, "ft"],
+      components: ["V","S"],
+      duration: [1, "minute"],
+      desc: "Grasping plants sprout"
     },
     druid_faerie_fire_1: {
       name: "Faerie Fire",
@@ -99,6 +151,38 @@ Attack rolls against an affected creature or object have Advantage if the attack
       duration: [1, "hour"],
       desc: "You touch a creature. The target's Speel increases by 10 ft. until the spell ends.",
       higher_levels: "You can target one additional creature for each spell slot level above 1."
+    },
+    druid_protection_from_evil_and_good_1: {
+      name: "Protection from Evil and Good",
+      id: "druid_protection_from_evil_and_good_1",
+      level: 1,
+      school: "abjuration",
+      concentration: true,
+      casting_time: "1 action",
+      range: "touch",
+      components: ["V","S","M"],
+      material_desc: "a flask of Holy Water worth 25+ GP, which the spell consumes",
+      duration: [10, "minute"],
+      desc: "Until the spell ends, one willing creature you touch is protected \
+against creatures that are Aberrations, Celestials, Elementals, Fey, Fiends, or Undead. \
+The protection grants several benefits: Creatures of those types have Disadvantage on attack \
+rolls against the target. The target also can't be possessed by or gain the Charmed or \
+Frightened conditions from them. If the target is already possessed, Charmed, or Frightened \
+by such a creature, the target has Advantage on any new saving throw against the relevant \
+effect."
+    },
+    druid_purify_food_and_drink_1: {
+      name: "Purify Food and Drink",
+      id: "druid_purify_food_and_drink_1",
+      level: 1,
+      school: "transmutation",
+      concentration: false,
+      casting_time: "1 action, or 1 ritual",
+      range: [10, "ft"],
+      components: ["V","S"],
+      duration: [0, "seconds"],
+      desc: "You remove poison and rot form nonmagical food and rink in a 5 ft. \
+radius Sphere centered on a point within range."
     },
     druid_speak_with_animals_1: {
       name: "Speak with Animals",
