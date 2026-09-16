@@ -7,7 +7,7 @@ Dungeons and Data is a D&D 5.5e-compatible client (kinda like D&D Beyond) for Wi
  - **Python**: Only Python 3.8 has been tested, but whatever supports the `json5` module, I suppose
 
 ## Spellsets
-I'm writing spellsets in *alphabetical order*. That means that Warlock and Wizard are last, and Bard and Cleric are first. The current spellset I'm doing is the Druid cantrips.
+I'm writing spellsets in *alphabetical order*. That means that Warlock and Wizard are last, and Bard and Cleric are first. The current spellset I'm doing is the Druid level 1 spells.
 
 ### How to format your own Spellsets
 
@@ -65,3 +65,8 @@ and multiline strings.
  - [ ] Complete "weaponsets" and "monstersets", as well as "itemsets"
  - [ ] GUI version
  - [ ] 3e/3.5e + 5e support (more JSON5, yippee)
+
+## Legal/License Information
+This work includes material from the System Reference Document 5.2.1 (“SRD 5.2.1”) by Wizards of the
+Coast LLC, available at https://www.dndbeyond.com/srd. The SRD 5.2.1 is licensed under the Creative
+Commons Attribution 4.0 International License, available at https://creativecommons.org/licenses/by/4.0/legalcode.

@@ -19,7 +19,7 @@ mean Cantrips, the game's parser will recognize level 0 as a cantrip.
 
 ### Cleric
  - [x] Cantrips
- - [ ] Level 1
+ - [x] Level 1
  - [ ] Level 2
  - [ ] Level 3
  - [ ] Level 4
@@ -31,7 +31,7 @@ mean Cantrips, the game's parser will recognize level 0 as a cantrip.
 
 ### Druid
  - [x] Cantrips
- - [ ] Level 1
+ - [x] Level 1
  - [ ] Level 2
  - [ ] Level 3
  - [ ] Level 4
@@ -42,14 +42,14 @@ mean Cantrips, the game's parser will recognize level 0 as a cantrip.
  - [ ] Level 9
 
 ### Paladin
- - [ ] Level 1
+ - [x] Level 1
  - [ ] Level 2
  - [ ] Level 3
  - [ ] Level 4
  - [ ] Level 5
 
 ### Ranger
- - [ ] Level 1
+ - [x] Level 1
  - [ ] Level 2
  - [ ] Level 3
  - [ ] Level 4
