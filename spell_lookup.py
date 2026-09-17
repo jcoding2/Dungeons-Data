@@ -27,10 +27,10 @@ def main():
         print(f"\n{spell.get('name', 'Unknown')}")
         print(f"Level: {spell.get('level', 'Unknown')}")
         print(f"School: {spell.get('school', 'Unknown')}")
-        print(f"Casting time: {spell.get('casting_time', 'Unknown')}")
+        print(f"Casting time: {spell.get('actionType', 'Unknown')}")
         print(f"Range: {spell.get('range', 'Unknown')}")
         print(f"Duration: {spell.get('duration', 'Unknown')}")
-        print(f"Description: {spell.get('desc', 'Unknown')}")
+        print(f"Description: {spell.get('description', 'Unknown')}")
 
 
 if __name__ == "__main__":
