@@ -3,9 +3,9 @@
   name: "Default Spellset",
   desc: "Contains the latest version of D&D's spells.",
   date_added: "4/22/2026",
-  last_updated: "9/3/2026",
+  last_updated: "9/17/2026",
   source: "System Reference Document v5.2.1",
-  author: "Dungeons and Data authors",
+  author: "dmcb",
   classes: ["bard", "cleric", "druid", "paladin", "ranger", "sorcerer", "warlock", "wizard"],
   files: [".\\spells.json"]
 }

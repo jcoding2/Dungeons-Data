@@ -1,0 +1,9 @@
+{
+  name: "Legacy Spellset",
+  desc: "Contains D&D Legacy (5e) spells",
+  date_added: "9/17/2026",
+  last_updated: "9/17/2026",
+  source: "System Reference Document v5.1",
+  author: "Dungeons and Data authors",
+  
+}

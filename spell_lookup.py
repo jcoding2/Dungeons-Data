@@ -28,6 +28,8 @@ def main():
         print(f"Level: {spell.get('level', 'Unknown')}")
         print(f"School: {spell.get('school', 'Unknown')}")
         print(f"Casting time: {spell.get('actionType', 'Unknown')}")
+        print(f"Concentration: {spell.get('concentration', 'Unknown')}")
+        print(f"Ritual: {spell.get('ritual', 'Unknown')}")
         print(f"Range: {spell.get('range', 'Unknown')}")
         print(f"Duration: {spell.get('duration', 'Unknown')}")
         print(f"Description: {spell.get('description', 'Unknown')}")
