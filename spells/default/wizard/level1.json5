@@ -1,13 +1,36 @@
 {
-  name: "Sorcerer Level 1 Spells (SRD)",
-  date_added: "September 16th, 2026",
+  name: "Wizard Level 1 Spells (SRD)",
+  date_created: "September 17th, 2026",
   last_updated: "September 17th, 2026",
   source: "System Reference Document v5.2.1",
   author: "Dungeons and Data authors",
   spells: {
-    sorcerer_burning_hands_1: {
+    wizard_alarm_1: {
+      name: "Alarm",
+      id: "wizard_alarm_1",
+      level: 1,
+      school: "abjuration",
+      concentration: false,
+      casting_time: "1 minute, or 1 ritual",
+      range: [30, "ft"],
+      components: ["V","S","M"],
+      material_desc: "a bell and silver wire",
+      duration: [8, "hour"],
+      desc: "You set an alarm against intrusion. Choose a door, a window, or an area within range that is no larger than a 20 ft. Cube. Until the spell ends, an alarm alerts you whenever a creature touches or enters the warded area. When you cast the spell, you can designate creatures that won't set off the alarm. You can also choose whether the alarm is audible or mental.",
+      effects: {
+        audible_alarm: {
+          name: "Audible Alarm",
+          desc: "The alarm produces the sound of a handbell for 10 sec. within 60 ft. of the warded area."
+        },
+        mental_alarm: {
+          name: "Mental Alarm",
+          desc: "You are alerted by a mental ping if you are within 1 mi. of the warded area. This ping also awakens you if you're asleep."
+        }
+      }
+    }, 
+    wizard_burning_hands_1: {
       name: "Burning Hands",
-      id: "sorcerer_burning_hands_1",
+      id: "wizard_burning_hands_1",
       level: 1,
       school: "evocation",
       concentration: false,
@@ -19,9 +42,9 @@
 Flammable objects in the Cone that aren't being worn or carried start burning.",
       higher_levels: "The damage increases by 1d6 for each slot level above 1.",
     },
-    sorcerer_charm_person_1: {
+    wizard_charm_person_1: {
       name: "Charm Person",
-      id: "sorcerer_charm_person_1",
+      id: "wizard_charm_person_1",
       level: 1,
       school: "enchantment",
       concentration: false,
@@ -32,9 +55,9 @@ Flammable objects in the Cone that aren't being worn or carried start burning.",
       desc: "One Humanoid you can see within range makes a WIS saving throw. It does so with Advantage if you (or your allies) are fighting it. On a failed save, the target has the Charmed condition until the spell ends or until you or your allies damage it. The Charmed creature is Friendly to you. When the spell ends, the target knows it was Charmed by you.",
       higher_levels: "You can target one additional creature for each spell slot level above 1."
     },
-    sorcerer_chromatic_orb_1: {
+    wizard_chromatic_orb_1: {
       name: "Chromatic Orb",
-      id: "sorcerer_chromatic_orb_1",
+      id: "wizard_chromatic_orb_1",
       level: 1,
       school: "evocation",
       concentration: false,
@@ -48,9 +71,9 @@ then make a ranged spell attack against the target. On a hit, the target takes 3
 If you roll the same number on two or more rolls, the orb leaps to a different target of your choice within 30 ft. of the target. Make an attack roll against the new target, and make a new damage roll. The orb can't leap again unless you cast the spell with a level 2+ level slot.",
       higher_levels: "The damage increases by 1d8 for each spell slot level above 1. The orb can leap a maximum number of times equal to the level of the slot expended, and a creature can be targeted only once by each casting of this spell."
     },
-    sorcerer_color_spray_1: {
+    wizard_color_spray_1: {
       name: "Color Spray",
-      id: "sorcerer_color_spray_1",
+      id: "wizard_color_spray_1",
       level: 1,
       school: "illusion",
       concentration: false,
@@ -61,9 +84,9 @@ If you roll the same number on two or more rolls, the orb leaps to a different t
       duration: [0, "seconds"],
       desc: "You launch a dazzling array of flashing, colorful light. Each creature in a 15-foot Cone originating from you must succeed on a CON saving throw or have the Blinded condition until the end of your next turn."
     },
-    sorcerer_comprehend_languages_1: {
+    wizard_comprehend_languages_1: {
       name: "Comprehend Languages",
-      id: "sorcerer_comprehend_languages_1",
+      id: "wizard_comprehend_languages_1",
       level: 1,
       school: "divination",
       concentration: false,
@@ -74,9 +97,9 @@ If you roll the same number on two or more rolls, the orb leaps to a different t
       duration: [1, "hour"],
       desc: "For the duration, you understand the literal meaning of any language that you hear or see signed. You also understand any written langauge that you see, but you must be touching the surface on which the words are written. It takes about 1 minute to read one page of text. This spell doesn't decode symbols or secret messages."
     },
-    sorcerer_detect_magic_1: {
+    wizard_detect_magic_1: {
       name: "Detect Magic",
-      id: "sorcerer_detect_magic_1",
+      id: "wizard_detect_magic_1",
       level: 1,
       school: "divination",
       concentration: true,
@@ -86,9 +109,9 @@ If you roll the same number on two or more rolls, the orb leaps to a different t
       duration: [10, "minute"],
       desc: "For the duration, you sense the presence of magical effects within 30 ft. of yourself. If you sense such effects, you can take the Magic action to see a faint aura around any visible creature or object in the area that bears the magic, and if an effect was created by a spell, you learn the spell's school of magic. The spell is blocked by 1 ft. of stone, dirt, or wood; or a thin sheet of lead.",
     },
-    sorcerer_disguise_self_1: {
+    wizard_disguise_self_1: {
       name: "Disguise Self",
-      id: "sorcerer_disguise_self_1",
+      id: "wizard_disguise_self_1",
       level: 1,
       school: "illusion",
       concentration: false,
@@ -100,9 +123,9 @@ If you roll the same number on two or more rolls, the orb leaps to a different t
 The changes wrought by this spell fail to hold up to physical inspection. For example, if you use this spell to add a hat to your outfit, objects pass through the hat, and anyone who touches would feel nothing. \
 To discern that you are disguised, a creature must take the Study action to inspect your appearance and succeed on an INT (Investigation) check against your spell save DC."
     },
-    sorcerer_expeditious_retreat_1: {
+    wizard_expeditious_retreat_1: {
       name: "Expeditious Retreat",
-      id: "sorcerer_expeditious_retreat_1",
+      id: "wizard_expeditious_retreat_1",
       level: 1,
       school: "transmutation",
       concentration: true,
@@ -112,9 +135,9 @@ To discern that you are disguised, a creature must take the Study action to insp
       duration: [10, "minute"],
       desc: "You take the Dash action, and until the spell ends, you can take that action again as a Bonus Action."
     },
-    sorcerer_false_life_1: {
+    wizard_false_life_1: {
       name: "False Life",
-      id: "sorcerer_false_life_1",
+      id: "wizard_false_life_1",
       level: 1,
       school: "necromancy",
       concentration: false,
@@ -126,9 +149,9 @@ To discern that you are disguised, a creature must take the Study action to insp
       desc: "You gain 2d4 + 4 Temporary HP.",
       higher_levels: "You gain 5 additional THP for each spell slot level above 1."
     },
-    sorcerer_feather_fall_1: {
+    wizard_feather_fall_1: {
       name: "Feather Fall",
-      id: "sorcerer_feather_fall_1",
+      id: "wizard_feather_fall_1",
       level: 1,
       school: "transmutation",
       concentration: false,
@@ -139,9 +162,41 @@ To discern that you are disguised, a creature must take the Study action to insp
       duration: [1, "minute"],
       desc: "Choose up to 5 falling creatures within range. A falling creature's rate of descent slows to 60 ft. per round until the spell ends. If a creature lands before the spell ends, the creature takes no damage from the fall, and the spell ends for that creature."
     },
-    sorcerer_fog_cloud_1: {
+    wizard_find_familiar_1: {
+      name: "Find Familiar",
+      id: "wizard_find_familiar_1",
+      level: 1,
+      school: "conjuration",
+      concentration: false,
+      casting_time: "1 hour or ritual",
+      range: [10, "ft"],
+      components: ["V","S","M"],
+      material_desc: "burning incense worth 10+ GP, which the spell consumes",
+      duration: [0, "seconds"],
+      desc: "You gain the service of a familiar, a spirit that takes an animal form you choose: Bat, Cat, Frog, Hawk, Lizard, Octopus, Owl, Rat, Raven, Spider, Weasel, or another Beast that has a Challenge rating of 0. Appearing in an unoccupied space within range, the familiar has the stats of the chosen form, though it is a Celestial, Fey or Fiend (your choice) instead of a Beast. Your familiar acts independantly of you, but it obeys your commands. \
+Telepathic Connection. While your familiar is within 100 ft. of you, you can communicate with it telepathically. Additionally, as a Bonus Action, you can see through the familiar's eyes and hear what it hears until the start of your next turn, gaining the benefits of any special senses it has. \
+Finally, when you cast a spell with a range of Touch, your familiar can deliver the touch. Your familiar must be within 100 ft. of you, and it must take a Reaction to deliver the touch when you cast the spell. \
+Combat. The familiar is an ally to you and your allies. It rolls its own Initiative and acts on its own turn. A familiar can't attack, but it can take other actions as normal. \
+Disappearance of the Familiar. When the familiar drops to 0 HP, it disappears. It reappears after you cast this spell again. As a Magic action, you can temporarily dismiss the familiar to a pocket dimension. Alternatively, you can dismiss it forever. As a Magic action while it is temporarily dismissed, you can cause it to reappear in an unoccupied space within 30 ft. of you. Whenever the familiar drops to 0 HP or disappears into the pocket dimension, it leaves behind in its space anything it was wearing or carrying. \
+One Familiar Only. You can't have more than one familiar at a time. If you cast this spell while your have a familiar, you instead cause it to adopt a new eligible form."
+    },
+    wizard_floating_disk_1: {
+      name: "Floating Disk",
+      id: "wizard_floating_disk_1",
+      level: 1,
+      school: "conjuration",
+      concentration: false,
+      range: [30, "ft"],
+      components: ["V","S","M"],
+      material_desc: "a drop of mercury",
+      duration: [1, "hour"],
+      desc: "This spell creates a circular, horizontal plane of force, 3 ft. in diameter and 1 in. thich, that floats 3 ft. above the ground in an unoccupied space that you can see within range. The disk remains for the duration and can hold up to 500 lbs. If more weight is placed on it, the spell ends, and everything on the disk falls to the ground. \
+The disk is immobile while you are within 20 ft. of it. If you move more than 20 ft. away from it, the disk follows you so that it remains within 20 ft. of you. It can move across unever terrain, up or down stairs, slopes and the like, but it can't cross an elevation change of 10 ft. or more. For example, the disk can't move across a 10 ft. deep pit, nor could it leave such a put if it was created at the bottom. \
+If you move more than 100 ft. from the disk (typically because it can't move around an obstacle to follow you), the spell ends."
+    },
+    wizard_fog_cloud_1: {
       name: "Fog Cloud",
-      id: "sorcerer_fog_cloud_1",
+      id: "wizard_fog_cloud_1",
       level: 1,
       school: "conjuration",
       concentration: true,
@@ -152,9 +207,9 @@ To discern that you are disguised, a creature must take the Study action to insp
       desc: "You create a 20 ft. radius Sphere of fog centered on a point within range. The Sphere is Heavily Obscured. It lasts for the duration or until a strong wind (such as a /Gust of Wind/) disperses it.",
       higher_levels: "The fog's radius increases by 20 ft. for each spell slot level above 1."
     },
-    sorcerer_grease_1: {
+    wizard_grease_1: {
       name: "Grease",
-      id: "sorcerer_grease_1",
+      id: "wizard_grease_1",
       level: 1,
       school: "conjuration",
       concentration: false,
@@ -166,9 +221,9 @@ To discern that you are disguised, a creature must take the Study action to insp
       desc: "Nonflammable grease covers the ground in a 10 ft. square centered on a point within range and turns it into Difficult Terrain for the duration. \
 When the grease appears, each creature standing in its area must succeed on a DEX save or have the Prone condition. A creature that enters the area or ends its turn there must also succeed on that save or fall Prone."
     },
-    sorcerer_ice_knife_1: {
+    wizard_ice_knife_1: {
       name: "Ice Knife",
-      id: "sorcerer_ice_knife_1",
+      id: "wizard_ice_knife_1",
       level: 1,
       school: "conjuration",
       concentration: false,
@@ -180,9 +235,9 @@ When the grease appears, each creature standing in its area must succeed on a DE
       desc: "You create a shard of ice and fling it at one creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 Piercing damage. Hit or miss, the shard then explodes. The target and each creature within 5 ft. of it must succeed on a DEX save or take 2d6 Cold damage.",
       higher_levels: "The Cold damage increases by 1d6 for each spell slot level above 1."
     },
-    sorcerer_jump_1: {
+    wizard_jump_1: {
       name: "Jump",
-      id: "sorcerer_jump_1",
+      id: "wizard_jump_1",
       level: 1,
       school: "transmutation",
       concentration: false,
@@ -194,9 +249,9 @@ When the grease appears, each creature standing in its area must succeed on a DE
       desc: "You touch a willing creature. Once on each of its turns until the spell ends, that creature can jump up to 30 ft. by spending 10 ft. of movement.",
       higher_levels: "You can target one additional creature for each spell slot level above 1."
     },
-    sorcerer_mage_armor_1: {
+    wizard_mage_armor_1: {
       name: "Mage Armor",
-      id: "sorcerer_mage_armor_1",
+      id: "wizard_mage_armor_1",
       level: 1,
       school: "abjuration",
       concentration: false,
@@ -207,9 +262,9 @@ When the grease appears, each creature standing in its area must succeed on a DE
       duration: [8, "hour"],
       desc: "You touch a willing creature who isn't wearing armor. Until the spell ends, the target's base AC becomes 13 + its DEX mod. The spell ends early if the target dons armor."
     },
-    sorcerer_magic_missile_1: {
+    wizard_magic_missile_1: {
       name: "Magic Missile",
-      id: "sorcerer_magic_missile_1",
+      id: "wizard_magic_missile_1",
       level: 1,
       school: "evocation",
       concentration: false,
@@ -220,9 +275,28 @@ When the grease appears, each creature standing in its area must succeed on a DE
       desc: "You create three glowing darts of magical force. Each dart strikes a creature of your choice that you can see within range. A dart deals 1d4+1 Force damage to its target. The darts all strike simultaneously, and you can direct them to hit one creature or several.",
       higher_levels: "The spell creates one more dart for each slot level above 1."
     },
-    sorcerer_ray_of_sickness_1: {
+    wizard_protection_from_evil_and_good_1: {
+      name: "Protection from Evil and Good",
+      id: "wizard_protection_from_evil_and_good_1",
+      level: 1,
+      school: "abjuration",
+      concentration: true,
+      casting_time: "1 action",
+      range: "touch",
+      components: ["V","S","M"],
+      material_desc: "a flask of Holy Water worth 25+ GP, which the spell consumes",
+      duration: [10, "minute"],
+      desc: "Until the spell ends, one willing creature you touch is protected \
+against creatures that are Aberrations, Celestials, Elementals, Fey, Fiends, or Undead. \
+The protection grants several benefits: Creatures of those types have Disadvantage on attack \
+rolls against the target. The target also can't be possessed by or gain the Charmed or \
+Frightened conditions from them. If the target is already possessed, Charmed, or Frightened \
+by such a creature, the target has Advantage on any new saving throw against the relevant \
+effect."
+    },
+    wizard_ray_of_sickness_1: {
       name: "Ray of Sickness",
-      id: "sorcerer_ray_of_sickness_1",
+      id: "wizard_ray_of_sickness_1",
       level: 1,
       school: "necromancy",
       concentration: false,
@@ -233,9 +307,9 @@ When the grease appears, each creature standing in its area must succeed on a DE
       desc: "You shoot a greenish ray at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 2d8 Poison damage and has the Poisoned condition until the end of your next turn.",
       higher_levels: "The damage increases by 1d8 for each spell slot level above 1."
     },
-    sorcerer_shield_1: {
+    wizard_shield_1: {
       name: "Shield",
-      id: "sorcerer_shield_1",
+      id: "wizard_shield_1",
       level: 1,
       school: "abjuration",
       concentration: false,
@@ -245,9 +319,9 @@ When the grease appears, each creature standing in its area must succeed on a DE
       duration: [1, "round"],
       desc: "An imperceptible barrier of magical force protects you. Until the start of your next turn, you have a +5 AC bonus, including against the triggering attack, and you take no damage from Magic Missile."
     },
-    sorcerer_silent_image_1: {
+    wizard_silent_image_1: {
       name: "Silent Image",
-      id: "sorcerer_silent_image_1",
+      id: "wizard_silent_image_1",
       level: 1,
       school: "illusion",
       concentration: true,
@@ -260,9 +334,9 @@ When the grease appears, each creature standing in its area must succeed on a DE
 As a Magic action, you can cause the image to move to any spot within range. As the image changes location, you can alter its appearance to that its movements appear natural for the image. For example, if you create an image of a creature and move it, you can alter the image so that it appears to be walking. \
 Physical interaction with the image reveals it to be an illusion, since things can pass through it. A creature that takes the Study action to examine the image can determine that it is an illusion with a successful INT (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the image."
     },
-    sorcerer_sleep_1: {
+    wizard_sleep_1: {
       name: "Sleep",
-      id: "sorcerer_sleep_1",
+      id: "wizard_sleep_1",
       level: 1,
       school: "enchantment",
       concentration: true,
@@ -274,9 +348,9 @@ Physical interaction with the image reveals it to be an illusion, since things c
       desc: "Each creature of your choice in a 5 ft. radius Sphere centered on a point within range must succeed on a WIS saving throw or have the Incapacitaed condition until the end of its next turn, at which point it must repeat the save. If the target fails the second save, the target has the Unconscious condition for the duration. The spell ends on a target if it takes damage or someone within 5 ft. of it takes an action to shake it out of the spell's effect. \
 Creatures that don't sleep, such as elves, or that have immunity to the Exhaustion condition automatically succed on saves against this spell."
     },
-    sorcerer_thunderwave_1: {
+    wizard_thunderwave_1: {
       name: "Thunderwave",
-      id: "sorcerer_thunderwave_1",
+      id: "wizard_thunderwave_1",
       level: 1,
       school: "evocation",
       concentration: false,
@@ -288,5 +362,20 @@ Creatures that don't sleep, such as elves, or that have immunity to the Exhausti
 In addition, unsecured objects that are entirely within the Cube are pushed 10 ft. away from you, and a thunderous boom is audible within 300 ft.",
       higher_levels: "The damage increases by 1d8 for each spell slot level above 1."
     },
+    wizard_unseen_servant_1: {
+      name: "Unseen Servant",
+      id: "wizard_unseen_servant_1",
+      level: 1,
+      school: "conjuration",
+      concentration: false,
+      casting_time: "1 action, or 1 ritual",
+      range: [60, "ft"],
+      components: ["V","S","M"],
+      material_desc: "a bit of string and of wood",
+      duration: [1, "hour"],
+      desc: "This spell creates an Invisible, mindless, shapeless, Medium force that performs simple tasks at your command until the spell ends. The servant springs into existence in an unoccupied space on the ground within range. It has AC 10, 1 HP, and 2 STR, and cannot attack. If its health reaches 0 HP, the spell ends. \
+Once on each of your turns as a Bonus Action, you can mentally command the servant to move up to 15 ft. and interact with an object. The servant can perform simple tasks that a human could do, such as fetching things, cleaning, mending, folding clothes, lighting fires, serving food, and pouring drinks. Once you give the command, the servant performs the task to the best of its ability until it completes the task, then waits for your next command. \
+If you command the servant to perform a task that would move it more than 60 ft. away from you, the spell ends."
+    }
   }
 }
