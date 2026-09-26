@@ -1,0 +1,97 @@
+{
+  "name": "Cleric Cantrips (SRD Legacy)",
+  "date_created": "September 25, 2026",
+  "last_updated": "September 25, 2026",
+  "author": "Dungeons and Data authors",
+  "source": "System Reference Document v5.1",
+  "spells": [
+    {
+      "name": "Guidance",
+      "level": 0,
+      "school": "divination",
+      "actionType": "action",
+      "concentration": true,
+      "ritual": false,
+      "range": "touch",
+      "components": ["v","s"],
+      "duration": "up to 1 minute",
+      "description": "You touch one willing creature. Once before the spell ends, the target can roll a d4 and add the number rolled to one ability check of its choice. It can roll the die before or after making the ability check. The spell then ends."
+    },
+    {
+      "name": "Light",
+      "level": 0,
+      "school": "evocation",
+      "actionType": "action",
+      "concentration": false,
+      "ritual": false,
+      "range": "touch",
+      "components": ["v", "m"],
+      "material": "a firefly or phosphorescent moss",
+      "duration": "1 hour",
+      "description": "You touch one object that is no larger than 10ft. in any dimension. Until the spell ends, the object sheds bright light in a 20ft. radius and dim light for an additional 20ft. The light can be colored as you like. Completely covering the object with something opaque blocks the light. The spell ends if you cast it again or dismiss it as an action.\n\nIf you target an object held or worn by a hostile creature, that creature must succeed on a DEX save to avoid the spell."
+    },
+    {
+      "name": "Mending",
+      "level": 0,
+      "school": "transmutation",
+      "actionType": "action",
+      "concentration": false,
+      "ritual": false,
+      "range": "touch",
+      "components": ["v","s","m"],
+      "material": "two lodestones",
+      "duration": "instantaneous",
+      "description": "This spell repairs a single break or tear in an object you touch, such as a broken chain link, two halves of a broken key, a torn cloak, or a leaking wineskin. As long as the break or tear is no larger than 1ft. in any dimension, you mend it, leaving no trace of the former damage.\n\nThis spell can physically repair a magic item or construct, but the spell can't restore magic to such an object."
+    },
+    {
+      "name": "Resistance",
+      "level": 0,
+      "school": "abjuration",
+      "actionType": "action",
+      "concentration": true,
+      "ritual": false,
+      "range": "touch",
+      "components": ["v","s","m"],
+      "material": "a miniature cloak",
+      "duration": "up to 1 minute",
+      "desc": "You touch one willing creature. Once the spell ends, the target can roll a d4 and add the number rolled to one save of its choice. It can roll the die before or after making the saving throw. The spell then ends."
+    },
+    {
+      "name": "Sacred Flame",
+      "level": 0,
+      "school": "evocation",
+      "actionType": "action",
+      "concentration": false,
+      "ritual": false,
+      "range": "60 feet",
+      "components": ["v","s"],
+      "duration": "instantaneous",
+      "desc": "Flame-like radiance descends on a creature that you can see within range. The target must succeed on a DEX save or take 1d8 radiant damage. The target gains no benefit from cover for this save.",
+      "cantripUpgrade": "The spell's damage increases by 1d8 when you reach level 5 (2d8), level 11 (3d8), and level 17 (4d8)."
+    },
+    {
+      "name": "Spare the Dying",
+      "level": 0,
+      "school": "necromancy",
+      "actionType": "action",
+      "concentration": false,
+      "ritual": false,
+      "range": "touch",
+      "components": ["v", "s"],
+      "duration": "instantaneous",
+      "desc": "You touch a living creature that has 0 HP. The creature becomes stable. This spell has no effect on undead or constructs."
+    },
+    {
+      "name": "Thaumaturgy",
+      "level": 0,
+      "school": "transmutation",
+      "actionType": "action",
+      "concentration": false,
+      "ritual": false,
+      "range": "30 feet",
+      "components": ["v"],
+      "duration": "up to 1 minute",
+      "desc": "You manifest a minor wonder, a sign of supernatural power, within range. You create one of the following effects within range:\n\n - Your voice booms up to 3x as loud as normal for 1 min.\n - You cause flames to flicker, brighten, dim, or change color for 1 min.\n - You cause harmless tremors in the ground for 1 min.\n - You create an instantaneous sound that originates from a point of your choice within range, such as a rumble of thunder, the cry of a raven, or ominous whispers.\n - You instantaneously cause an unlocked door or whindow to fly open or slam shut.\n - You alter the appearance of your eyes for 1 min.\n\nIf you cast this spell multiple times, you can have up to three of its 1 min. effects active at a time, and you can dismiss such an effect as an action."
+    }
+  ]
+}
